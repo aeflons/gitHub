@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAD1A3681FFF821300712BD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1A3671FFF821300712BD4 /* AppDelegate.m */; };
+		BAD1A36B1FFF821300712BD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1A36A1FFF821300712BD4 /* ViewController.m */; };
+		BAD1A36E1FFF821300712BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD1A36C1FFF821300712BD4 /* Main.storyboard */; };
+		BAD1A3701FFF821300712BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD1A36F1FFF821300712BD4 /* Assets.xcassets */; };
+		BAD1A3731FFF821300712BD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD1A3711FFF821300712BD4 /* LaunchScreen.storyboard */; };
+		BAD1A3761FFF821300712BD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1A3751FFF821300712BD4 /* main.m */; };
+		BAD1A3801FFF821300712BD4 /* _______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1A37F1FFF821300712BD4 /* _______Tests.m */; };
+		BAD1A38B1FFF821300712BD4 /* _______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1A38A1FFF821300712BD4 /* _______UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAD1A37C1FFF821300712BD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAD1A35B1FFF821300712BD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAD1A3621FFF821300712BD4;
+			remoteInfo = "添加事件到日历";
+		};
+		BAD1A3871FFF821300712BD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAD1A35B1FFF821300712BD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAD1A3621FFF821300712BD4;
+			remoteInfo = "添加事件到日历";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BAD1A3631FFF821300712BD4 /* 添加事件到日历.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "添加事件到日历.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD1A3661FFF821300712BD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAD1A3671FFF821300712BD4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAD1A3691FFF821300712BD4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BAD1A36A1FFF821300712BD4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BAD1A36D1FFF821300712BD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAD1A36F1FFF821300712BD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAD1A3721FFF821300712BD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAD1A3741FFF821300712BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD1A3751FFF821300712BD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAD1A37B1FFF821300712BD4 /* 添加事件到日历Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "添加事件到日历Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD1A37F1FFF821300712BD4 /* _______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______Tests.m"; sourceTree = "<group>"; };
+		BAD1A3811FFF821300712BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD1A3861FFF821300712BD4 /* 添加事件到日历UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "添加事件到日历UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD1A38A1FFF821300712BD4 /* _______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______UITests.m"; sourceTree = "<group>"; };
+		BAD1A38C1FFF821300712BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAD1A3601FFF821300712BD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD1A3781FFF821300712BD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD1A3831FFF821300712BD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAD1A35A1FFF821300712BD4 = {
+			isa = PBXGroup;
+			children = (
+				BAD1A3651FFF821300712BD4 /* 添加事件到日历 */,
+				BAD1A37E1FFF821300712BD4 /* 添加事件到日历Tests */,
+				BAD1A3891FFF821300712BD4 /* 添加事件到日历UITests */,
+				BAD1A3641FFF821300712BD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAD1A3641FFF821300712BD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAD1A3631FFF821300712BD4 /* 添加事件到日历.app */,
+				BAD1A37B1FFF821300712BD4 /* 添加事件到日历Tests.xctest */,
+				BAD1A3861FFF821300712BD4 /* 添加事件到日历UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAD1A3651FFF821300712BD4 /* 添加事件到日历 */ = {
+			isa = PBXGroup;
+			children = (
+				BAD1A3661FFF821300712BD4 /* AppDelegate.h */,
+				BAD1A3671FFF821300712BD4 /* AppDelegate.m */,
+				BAD1A3691FFF821300712BD4 /* ViewController.h */,
+				BAD1A36A1FFF821300712BD4 /* ViewController.m */,
+				BAD1A36C1FFF821300712BD4 /* Main.storyboard */,
+				BAD1A36F1FFF821300712BD4 /* Assets.xcassets */,
+				BAD1A3711FFF821300712BD4 /* LaunchScreen.storyboard */,
+				BAD1A3741FFF821300712BD4 /* Info.plist */,
+				BAD1A3751FFF821300712BD4 /* main.m */,
+			);
+			path = "添加事件到日历";
+			sourceTree = "<group>";
+		};
+		BAD1A37E1FFF821300712BD4 /* 添加事件到日历Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BAD1A37F1FFF821300712BD4 /* _______Tests.m */,
+				BAD1A3811FFF821300712BD4 /* Info.plist */,
+			);
+			path = "添加事件到日历Tests";
+			sourceTree = "<group>";
+		};
+		BAD1A3891FFF821300712BD4 /* 添加事件到日历UITests */ = {
+			isa = PBXGroup;
+			children = (
+				BAD1A38A1FFF821300712BD4 /* _______UITests.m */,
+				BAD1A38C1FFF821300712BD4 /* Info.plist */,
+			);
+			path = "添加事件到日历UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAD1A3621FFF821300712BD4 /* 添加事件到日历 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD1A38F1FFF821300712BD4 /* Build configuration list for PBXNativeTarget "添加事件到日历" */;
+			buildPhases = (
+				BAD1A35F1FFF821300712BD4 /* Sources */,
+				BAD1A3601FFF821300712BD4 /* Frameworks */,
+				BAD1A3611FFF821300712BD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "添加事件到日历";
+			productName = "添加事件到日历";
+			productReference = BAD1A3631FFF821300712BD4 /* 添加事件到日历.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAD1A37A1FFF821300712BD4 /* 添加事件到日历Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD1A3921FFF821300712BD4 /* Build configuration list for PBXNativeTarget "添加事件到日历Tests" */;
+			buildPhases = (
+				BAD1A3771FFF821300712BD4 /* Sources */,
+				BAD1A3781FFF821300712BD4 /* Frameworks */,
+				BAD1A3791FFF821300712BD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAD1A37D1FFF821300712BD4 /* PBXTargetDependency */,
+			);
+			name = "添加事件到日历Tests";
+			productName = "添加事件到日历Tests";
+			productReference = BAD1A37B1FFF821300712BD4 /* 添加事件到日历Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAD1A3851FFF821300712BD4 /* 添加事件到日历UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD1A3951FFF821300712BD4 /* Build configuration list for PBXNativeTarget "添加事件到日历UITests" */;
+			buildPhases = (
+				BAD1A3821FFF821300712BD4 /* Sources */,
+				BAD1A3831FFF821300712BD4 /* Frameworks */,
+				BAD1A3841FFF821300712BD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAD1A3881FFF821300712BD4 /* PBXTargetDependency */,
+			);
+			name = "添加事件到日历UITests";
+			productName = "添加事件到日历UITests";
+			productReference = BAD1A3861FFF821300712BD4 /* 添加事件到日历UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAD1A35B1FFF821300712BD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = yujunzhen;
+				TargetAttributes = {
+					BAD1A3621FFF821300712BD4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BAD1A37A1FFF821300712BD4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BAD1A3621FFF821300712BD4;
+					};
+					BAD1A3851FFF821300712BD4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BAD1A3621FFF821300712BD4;
+					};
+				};
+			};
+			buildConfigurationList = BAD1A35E1FFF821300712BD4 /* Build configuration list for PBXProject "添加事件到日历" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAD1A35A1FFF821300712BD4;
+			productRefGroup = BAD1A3641FFF821300712BD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAD1A3621FFF821300712BD4 /* 添加事件到日历 */,
+				BAD1A37A1FFF821300712BD4 /* 添加事件到日历Tests */,
+				BAD1A3851FFF821300712BD4 /* 添加事件到日历UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAD1A3611FFF821300712BD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD1A3731FFF821300712BD4 /* LaunchScreen.storyboard in Resources */,
+				BAD1A3701FFF821300712BD4 /* Assets.xcassets in Resources */,
+				BAD1A36E1FFF821300712BD4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD1A3791FFF821300712BD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD1A3841FFF821300712BD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAD1A35F1FFF821300712BD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD1A36B1FFF821300712BD4 /* ViewController.m in Sources */,
+				BAD1A3761FFF821300712BD4 /* main.m in Sources */,
+				BAD1A3681FFF821300712BD4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD1A3771FFF821300712BD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD1A3801FFF821300712BD4 /* _______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD1A3821FFF821300712BD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD1A38B1FFF821300712BD4 /* _______UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAD1A37D1FFF821300712BD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAD1A3621FFF821300712BD4 /* 添加事件到日历 */;
+			targetProxy = BAD1A37C1FFF821300712BD4 /* PBXContainerItemProxy */;
+		};
+		BAD1A3881FFF821300712BD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAD1A3621FFF821300712BD4 /* 添加事件到日历 */;
+			targetProxy = BAD1A3871FFF821300712BD4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAD1A36C1FFF821300712BD4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAD1A36D1FFF821300712BD4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAD1A3711FFF821300712BD4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAD1A3721FFF821300712BD4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAD1A38D1FFF821300712BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BAD1A38E1FFF821300712BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAD1A3901FFF821300712BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLRV94SV3R;
+				INFOPLIST_FILE = "添加事件到日历/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alfons.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAD1A3911FFF821300712BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLRV94SV3R;
+				INFOPLIST_FILE = "添加事件到日历/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alfons.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BAD1A3931FFF821300712BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLRV94SV3R;
+				INFOPLIST_FILE = "添加事件到日历Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alfons.-------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/添加事件到日历.app/添加事件到日历";
+			};
+			name = Debug;
+		};
+		BAD1A3941FFF821300712BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLRV94SV3R;
+				INFOPLIST_FILE = "添加事件到日历Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alfons.-------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/添加事件到日历.app/添加事件到日历";
+			};
+			name = Release;
+		};
+		BAD1A3961FFF821300712BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLRV94SV3R;
+				INFOPLIST_FILE = "添加事件到日历UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alfons.-------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "添加事件到日历";
+			};
+			name = Debug;
+		};
+		BAD1A3971FFF821300712BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLRV94SV3R;
+				INFOPLIST_FILE = "添加事件到日历UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alfons.-------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "添加事件到日历";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAD1A35E1FFF821300712BD4 /* Build configuration list for PBXProject "添加事件到日历" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD1A38D1FFF821300712BD4 /* Debug */,
+				BAD1A38E1FFF821300712BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD1A38F1FFF821300712BD4 /* Build configuration list for PBXNativeTarget "添加事件到日历" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD1A3901FFF821300712BD4 /* Debug */,
+				BAD1A3911FFF821300712BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD1A3921FFF821300712BD4 /* Build configuration list for PBXNativeTarget "添加事件到日历Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD1A3931FFF821300712BD4 /* Debug */,
+				BAD1A3941FFF821300712BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD1A3951FFF821300712BD4 /* Build configuration list for PBXNativeTarget "添加事件到日历UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD1A3961FFF821300712BD4 /* Debug */,
+				BAD1A3971FFF821300712BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAD1A35B1FFF821300712BD4 /* Project object */;
+}
