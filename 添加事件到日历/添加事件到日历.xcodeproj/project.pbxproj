@@ -434,7 +434,7 @@
 				DEVELOPMENT_TEAM = NLRV94SV3R;
 				INFOPLIST_FILE = "添加事件到日历/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "alfons.-------";
+				PRODUCT_BUNDLE_IDENTIFIER = alfonsStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,7 +448,7 @@
 				DEVELOPMENT_TEAM = NLRV94SV3R;
 				INFOPLIST_FILE = "添加事件到日历/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "alfons.-------";
+				PRODUCT_BUNDLE_IDENTIFIER = alfonsStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
