@@ -52,7 +52,7 @@ public:
         return m_up;
     }
     
-    void AddToATB(TwBar* bar);
+
 
 private:
 

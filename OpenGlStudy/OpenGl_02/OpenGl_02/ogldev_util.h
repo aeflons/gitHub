@@ -18,7 +18,8 @@
 
 #ifndef OGLDEV_UTIL_H
 #define	OGLDEV_UTIL_H
-
+#include <iostream>
+#include <fstream> 
 #ifndef WIN32
 #include <unistd.h>
 #endif
