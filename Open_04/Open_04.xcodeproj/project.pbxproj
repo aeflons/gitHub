@@ -32,6 +32,10 @@
 		BA6DCE5920F363DC0069E99B /* ogldev_math_3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6DCE5620F363DC0069E99B /* ogldev_math_3d.cpp */; };
 		BA6DCE5C20F364120069E99B /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6DCE5A20F364120069E99B /* stdafx.cpp */; };
 		BA6DCE5F20F37C170069E99B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6DCE5E20F37C170069E99B /* GLKit.framework */; };
+		BA6DCEFF20F493EE0069E99B /* ogldev_math_3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6DCEF820F493EE0069E99B /* ogldev_math_3d.cpp */; };
+		BA6DCF0020F493EE0069E99B /* ogldev_pipeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6DCEFB20F493EE0069E99B /* ogldev_pipeline.cpp */; };
+		BA6DCF0120F493EE0069E99B /* ogldev_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6DCEFC20F493EE0069E99B /* ogldev_util.cpp */; };
+		BA6DCF0220F493EE0069E99B /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6DCEFE20F493EE0069E99B /* stdafx.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +153,13 @@
 		BA6DCE5B20F364120069E99B /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
 		BA6DCE5D20F364250069E99B /* targetver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = targetver.h; sourceTree = "<group>"; };
 		BA6DCE5E20F37C170069E99B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		BA6DCEF820F493EE0069E99B /* ogldev_math_3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ogldev_math_3d.cpp; sourceTree = "<group>"; };
+		BA6DCEF920F493EE0069E99B /* ogldev_math_3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogldev_math_3d.h; sourceTree = "<group>"; };
+		BA6DCEFA20F493EE0069E99B /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		BA6DCEFB20F493EE0069E99B /* ogldev_pipeline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ogldev_pipeline.cpp; sourceTree = "<group>"; };
+		BA6DCEFC20F493EE0069E99B /* ogldev_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ogldev_util.cpp; sourceTree = "<group>"; };
+		BA6DCEFD20F493EE0069E99B /* targetver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = targetver.h; sourceTree = "<group>"; };
+		BA6DCEFE20F493EE0069E99B /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +313,13 @@
 				BA6DCE5620F363DC0069E99B /* ogldev_math_3d.cpp */,
 				BA6DCE5420F363DC0069E99B /* ogldev_pipeline.cpp */,
 				BA6DCE5520F363DC0069E99B /* ogldev_util.cpp */,
+				BA6DCEF820F493EE0069E99B /* ogldev_math_3d.cpp */,
+				BA6DCEF920F493EE0069E99B /* ogldev_math_3d.h */,
+				BA6DCEFB20F493EE0069E99B /* ogldev_pipeline.cpp */,
+				BA6DCEFC20F493EE0069E99B /* ogldev_util.cpp */,
+				BA6DCEFE20F493EE0069E99B /* stdafx.cpp */,
+				BA6DCEFA20F493EE0069E99B /* stdafx.h */,
+				BA6DCEFD20F493EE0069E99B /* targetver.h */,
 				BA6DCE3D20F355A60069E99B /* ogldev_app.h */,
 				BA6DCE3E20F355A60069E99B /* ogldev_atb.h */,
 				BA6DCE2E20F355A50069E99B /* ogldev_backend.h */,
@@ -497,11 +515,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA6DCF0220F493EE0069E99B /* stdafx.cpp in Sources */,
 				BA6DCE5720F363DC0069E99B /* ogldev_pipeline.cpp in Sources */,
+				BA6DCEFF20F493EE0069E99B /* ogldev_math_3d.cpp in Sources */,
 				BA6DCDF120F353E90069E99B /* Main.cpp in Sources */,
 				BA6DCE5820F363DC0069E99B /* ogldev_util.cpp in Sources */,
 				BA6DCE5920F363DC0069E99B /* ogldev_math_3d.cpp in Sources */,
 				BA6DCE5C20F364120069E99B /* stdafx.cpp in Sources */,
+				BA6DCF0120F493EE0069E99B /* ogldev_util.cpp in Sources */,
+				BA6DCF0020F493EE0069E99B /* ogldev_pipeline.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
