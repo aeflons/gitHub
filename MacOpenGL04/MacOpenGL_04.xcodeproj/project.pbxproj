@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA2237C621008EEF00E8BD3F /* primitive_restart.g in Resources */ = {isa = PBXBuildFile; fileRef = BA2237C421008EEF00E8BD3F /* primitive_restart.g */; };
+		BA2237C721008EEF00E8BD3F /* primitive_restart.v in Resources */ = {isa = PBXBuildFile; fileRef = BA2237C521008EEF00E8BD3F /* primitive_restart.v */; };
+		BA2237D3210093C400E8BD3F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA2237D2210093C400E8BD3F /* main.cpp */; };
 		BAE9399A20FA424100C96F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE9399920FA424100C96F95 /* Assets.xcassets */; };
 		BAE939A920FA42B200C96F95 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE939A820FA42A900C96F95 /* OpenGL.framework */; };
 		BAE939C520FA445D00C96F95 /* gl3w.c in Sources */ = {isa = PBXBuildFile; fileRef = BAE939BE20FA445D00C96F95 /* gl3w.c */; };
@@ -18,13 +21,15 @@
 		BAE939CB20FA445D00C96F95 /* vermilion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE939C420FA445D00C96F95 /* vermilion.cpp */; };
 		BAE939CD20FA457800C96F95 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE939CC20FA457800C96F95 /* libglfw.3.2.dylib */; };
 		BAE939CF20FA4CC800C96F95 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE939CE20FA4CC800C96F95 /* libGLEW.2.1.0.dylib */; };
-		BAE939D120FA4E3C00C96F95 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE939D020FA4E3C00C96F95 /* main.cpp */; };
 		BAE939D420FA518D00C96F95 /* keypress.vert in Resources */ = {isa = PBXBuildFile; fileRef = BAE939D220FA518D00C96F95 /* keypress.vert */; };
 		BAE939D520FA518D00C96F95 /* keypress.frag in Resources */ = {isa = PBXBuildFile; fileRef = BAE939D320FA518D00C96F95 /* keypress.frag */; };
 		BAE939D720FD065A00C96F95 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE939D620FD064F00C96F95 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA2237C421008EEF00E8BD3F /* primitive_restart.g */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primitive_restart.g; sourceTree = "<group>"; };
+		BA2237C521008EEF00E8BD3F /* primitive_restart.v */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primitive_restart.v; sourceTree = "<group>"; };
+		BA2237D2210093C400E8BD3F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = MainSource/DrawInCommand/main.cpp; sourceTree = "<group>"; };
 		BAE9399020FA424100C96F95 /* MacOpenGL_04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOpenGL_04.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE9399920FA424100C96F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAE9399E20FA424100C96F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,7 +59,6 @@
 		BAE939C420FA445D00C96F95 /* vermilion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vermilion.cpp; sourceTree = "<group>"; };
 		BAE939CC20FA457800C96F95 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		BAE939CE20FA4CC800C96F95 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
-		BAE939D020FA4E3C00C96F95 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BAE939D220FA518D00C96F95 /* keypress.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = keypress.vert; sourceTree = "<group>"; };
 		BAE939D320FA518D00C96F95 /* keypress.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = keypress.frag; sourceTree = "<group>"; };
 		BAE939D620FD064F00C96F95 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
@@ -96,12 +100,14 @@
 		BAE9399220FA424100C96F95 /* MacOpenGL03 */ = {
 			isa = PBXGroup;
 			children = (
-				BAE939D020FA4E3C00C96F95 /* main.cpp */,
+				BA2237D2210093C400E8BD3F /* main.cpp */,
 				BAE939BD20FA445D00C96F95 /* lib */,
 				BAE939AC20FA445700C96F95 /* include */,
 				BAE9399920FA424100C96F95 /* Assets.xcassets */,
 				BAE939D320FA518D00C96F95 /* keypress.frag */,
 				BAE939D220FA518D00C96F95 /* keypress.vert */,
+				BA2237C421008EEF00E8BD3F /* primitive_restart.g */,
+				BA2237C521008EEF00E8BD3F /* primitive_restart.v */,
 				BAE9399E20FA424100C96F95 /* Info.plist */,
 				BAE939A120FA424100C96F95 /* MacOpenGL_03.entitlements */,
 			);
@@ -215,6 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAE939D520FA518D00C96F95 /* keypress.frag in Resources */,
+				BA2237C621008EEF00E8BD3F /* primitive_restart.g in Resources */,
+				BA2237C721008EEF00E8BD3F /* primitive_restart.v in Resources */,
 				BAE939D420FA518D00C96F95 /* keypress.vert in Resources */,
 				BAE9399A20FA424100C96F95 /* Assets.xcassets in Resources */,
 			);
@@ -233,7 +241,7 @@
 				BAE939CB20FA445D00C96F95 /* vermilion.cpp in Sources */,
 				BAE939C920FA445D00C96F95 /* vbm.cpp in Sources */,
 				BAE939C620FA445D00C96F95 /* LoadShaders.cpp in Sources */,
-				BAE939D120FA4E3C00C96F95 /* main.cpp in Sources */,
+				BA2237D3210093C400E8BD3F /* main.cpp in Sources */,
 				BAE939CA20FA445D00C96F95 /* vdds.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

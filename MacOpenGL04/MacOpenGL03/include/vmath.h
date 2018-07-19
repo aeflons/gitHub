@@ -4,7 +4,8 @@
 
 #define _USE_MATH_DEFINES  1 // Include constants defined in math.h
 #include <math.h>
-
+#define translation translate
+#define rotation rotate
 namespace vmath
 {
 

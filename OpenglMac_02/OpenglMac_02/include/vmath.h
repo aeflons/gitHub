@@ -637,7 +637,14 @@ static inline mat4 perspective(float fovy /* in degrees */, float aspect, float 
 	float  right = top * aspect; // left = -right
 	return frustum(-right, right, -top, top, n, f);
 }
-
+template <typename T>
+    static inline Tmat4<T> translate(T x, T y, T z)
+    {
+        return Tmat4<T>(Tvec4<T>(1.0f, 0.0f, 0.0f, 0.0f),
+                        Tvec4<T>(0.0f, 1.0f, 0.0f, 0.0f),
+                        Tvec4<T>(0.0f, 0.0f, 1.0f, 0.0f),
+                        Tvec4<T>(x, y, z, 1.0f));
+    }
 template <typename T>
 static inline Tmat4<T> lookat(vecN<T,3> eye, vecN<T,3> center, vecN<T,3> up)
 {
@@ -653,14 +660,7 @@ static inline Tmat4<T> lookat(vecN<T,3> eye, vecN<T,3> center, vecN<T,3> up)
     return M * translate<T>(-eye);
 }
 
-template <typename T>
-static inline Tmat4<T> translate(T x, T y, T z)
-{
-    return Tmat4<T>(Tvec4<T>(1.0f, 0.0f, 0.0f, 0.0f),
-                    Tvec4<T>(0.0f, 1.0f, 0.0f, 0.0f),
-                    Tvec4<T>(0.0f, 0.0f, 1.0f, 0.0f),
-                    Tvec4<T>(x, y, z, 1.0f));
-}
+
 
 template <typename T>
 static inline Tmat4<T> translate(const vecN<T,3>& v)

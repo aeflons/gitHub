@@ -21,6 +21,8 @@
 		BA2235CE20FDD85900E8BD3F /* targa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA2235C920FDD85900E8BD3F /* targa.cpp */; };
 		BA2235F820FDE28100E8BD3F /* UniformBlock.g in Resources */ = {isa = PBXBuildFile; fileRef = BA2235F620FDE28100E8BD3F /* UniformBlock.g */; };
 		BA2235F920FDE28100E8BD3F /* UniformBlock.v in Resources */ = {isa = PBXBuildFile; fileRef = BA2235F720FDE28100E8BD3F /* UniformBlock.v */; };
+		BA2237CC2100917800E8BD3F /* primitive_restart.g in Resources */ = {isa = PBXBuildFile; fileRef = BA2237CA2100917700E8BD3F /* primitive_restart.g */; };
+		BA2237CD2100917800E8BD3F /* primitive_restart.v in Resources */ = {isa = PBXBuildFile; fileRef = BA2237CB2100917700E8BD3F /* primitive_restart.v */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		BA2235F520FDE00200E8BD3F /* OpenglMac_02.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = OpenglMac_02.entitlements; sourceTree = "<group>"; };
 		BA2235F620FDE28100E8BD3F /* UniformBlock.g */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UniformBlock.g; sourceTree = "<group>"; };
 		BA2235F720FDE28100E8BD3F /* UniformBlock.v */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UniformBlock.v; sourceTree = "<group>"; };
+		BA2237CA2100917700E8BD3F /* primitive_restart.g */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = primitive_restart.g; path = ../../MacOpenGL04/MacOpenGL03/primitive_restart.g; sourceTree = "<group>"; };
+		BA2237CB2100917700E8BD3F /* primitive_restart.v */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = primitive_restart.v; path = ../../MacOpenGL04/MacOpenGL03/primitive_restart.v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				BA2235F520FDE00200E8BD3F /* OpenglMac_02.entitlements */,
+				BA2237CA2100917700E8BD3F /* primitive_restart.g */,
+				BA2237CB2100917700E8BD3F /* primitive_restart.v */,
 				BA22358B20FCAD9500E8BD3F /* main.cpp */,
 				BA2235F620FDE28100E8BD3F /* UniformBlock.g */,
 				BA2235F720FDE28100E8BD3F /* UniformBlock.v */,
@@ -311,6 +317,8 @@
 				BA2235F820FDE28100E8BD3F /* UniformBlock.g in Resources */,
 				BA2235BD20FCB47100E8BD3F /* triangles.vert in Resources */,
 				BA2235F920FDE28100E8BD3F /* UniformBlock.v in Resources */,
+				BA2237CC2100917800E8BD3F /* primitive_restart.g in Resources */,
+				BA2237CD2100917800E8BD3F /* primitive_restart.v in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +513,7 @@
 					"$(inherited)",
 					/usr/local/Cellar/glew/2.1.0/lib,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "-lGLEW";
 				PRODUCT_BUNDLE_IDENTIFIER = "alfons.OpenglMac-02";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,6 +543,7 @@
 					"$(inherited)",
 					/usr/local/Cellar/glew/2.1.0/lib,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "-lGLEW";
 				PRODUCT_BUNDLE_IDENTIFIER = "alfons.OpenglMac-02";
 				PRODUCT_NAME = "$(TARGET_NAME)";

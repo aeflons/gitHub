@@ -73,7 +73,7 @@ LoadShaders(ShaderInfo* shaders)
         }
 
         glShaderSource( shader, 1, &source, NULL );
-        delete [] source;
+        //delete [] source;
 
         glCompileShader( shader );
 
