@@ -7,10 +7,10 @@
 //
 
 #include <stdio.h>
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
+//#include <GL/glew.h>
+//#include <GLFW/glfw3.h>
 #include <GLUT/GLUT.h>
-#include "ogldev_util.h"
+//#include "ogldev_util.h"
 #include <string.h>
 #include "ogldev_math_3d.h"
 
