@@ -10,6 +10,8 @@ out vec4 vs_fs_color;
 
 void main(void)
 {
+
     vs_fs_color = color;
     gl_Position = projection_matrix * (model_matrix * position);
+    gl_PointSize = 5;
 }
