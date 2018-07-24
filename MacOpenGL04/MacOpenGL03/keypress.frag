@@ -1,9 +1,9 @@
 #version 410 core
-out vec4 fColor;
+/* sample  */in vec4 color;
 
-in vec4 oColor;
+out vec4 fColor;
 
 void main()
 {
-    fColor = oColor;
+    fColor = color;
 }
