@@ -1,8 +1,10 @@
 #version 410 core
+sample in vec4 color;
 out vec4 fColor;
 
 void
 main()
 {
-    fColor = vec4(0.0, 0.0, 1.0, 1.0);
+    //Color = {1.0, 0.5, 0.2, 1.0};
+    fColor = color;
 }
