@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		BA4E9C01210703A8001123C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4E9C00210703A8001123C1 /* Assets.xcassets */; };
-		BA4E9C27210703FC001123C1 /* gl3w.c in Sources */ = {isa = PBXBuildFile; fileRef = BA4E9C20210703FC001123C1 /* gl3w.c */; };
-		BA4E9C28210703FC001123C1 /* LoadShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA4E9C21210703FC001123C1 /* LoadShaders.cpp */; };
-		BA4E9C29210703FC001123C1 /* loadtexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA4E9C22210703FC001123C1 /* loadtexture.cpp */; };
-		BA4E9C2A210703FC001123C1 /* targa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA4E9C23210703FC001123C1 /* targa.cpp */; };
-		BA4E9C2B210703FC001123C1 /* vbm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA4E9C24210703FC001123C1 /* vbm.cpp */; };
-		BA4E9C2C210703FC001123C1 /* vdds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA4E9C25210703FC001123C1 /* vdds.cpp */; };
-		BA4E9C2D210703FC001123C1 /* vermilion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA4E9C26210703FC001123C1 /* vermilion.cpp */; };
 		BA4E9C302107040E001123C1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4E9C2F2107040E001123C1 /* OpenGL.framework */; };
 		BA4E9C3221070417001123C1 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4E9C3121070417001123C1 /* GLUT.framework */; };
 		BA4E9C3421070428001123C1 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4E9C3321070428001123C1 /* libGLEW.2.1.0.dylib */; };
 		BA4E9C3621070448001123C1 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4E9C3521070448001123C1 /* libglfw.3.2.dylib */; };
 		BA4E9C3C210704AD001123C1 /* keypress.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA4E9C3B210704AD001123C1 /* keypress.frag */; };
 		BA4E9C3E210704B7001123C1 /* keypress.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA4E9C3D210704B7001123C1 /* keypress.vert */; };
+		BA6D7DE0210820B90050201C /* gl3w.c in Sources */ = {isa = PBXBuildFile; fileRef = BA6D7DC8210820B90050201C /* gl3w.c */; };
+		BA6D7DE1210820B90050201C /* LoadShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6D7DC9210820B90050201C /* LoadShaders.cpp */; };
+		BA6D7DE2210820B90050201C /* loadtexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6D7DCA210820B90050201C /* loadtexture.cpp */; };
+		BA6D7DE3210820B90050201C /* targa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6D7DCB210820B90050201C /* targa.cpp */; };
+		BA6D7DE4210820B90050201C /* vbm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6D7DCC210820B90050201C /* vbm.cpp */; };
+		BA6D7DE5210820B90050201C /* vdds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6D7DCD210820B90050201C /* vdds.cpp */; };
+		BA6D7DE6210820B90050201C /* vermilion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6D7DCE210820B90050201C /* vermilion.cpp */; };
 		BA6F020A21073F8400C57D65 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6F020921073F8400C57D65 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,35 +29,35 @@
 		BA4E9C00210703A8001123C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA4E9C05210703A8001123C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA4E9C08210703A8001123C1 /* OpenglMac_03.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenglMac_03.entitlements; sourceTree = "<group>"; };
-		BA4E9C0F210703FC001123C1 /* CheckError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckError.h; sourceTree = "<group>"; };
-		BA4E9C10210703FC001123C1 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
-		BA4E9C11210703FC001123C1 /* gl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl3.h; sourceTree = "<group>"; };
-		BA4E9C12210703FC001123C1 /* gl3w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl3w.h; sourceTree = "<group>"; };
-		BA4E9C13210703FC001123C1 /* glcorearb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glcorearb.h; sourceTree = "<group>"; };
-		BA4E9C14210703FC001123C1 /* glext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glext.h; sourceTree = "<group>"; };
-		BA4E9C15210703FC001123C1 /* LoadShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadShaders.h; sourceTree = "<group>"; };
-		BA4E9C16210703FC001123C1 /* mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat.h; sourceTree = "<group>"; };
-		BA4E9C17210703FC001123C1 /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teapot.h; sourceTree = "<group>"; };
-		BA4E9C18210703FC001123C1 /* vapp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vapp.h; sourceTree = "<group>"; };
-		BA4E9C19210703FC001123C1 /* vbm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbm.h; sourceTree = "<group>"; };
-		BA4E9C1A210703FC001123C1 /* vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec.h; sourceTree = "<group>"; };
-		BA4E9C1B210703FC001123C1 /* vermilion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vermilion.h; sourceTree = "<group>"; };
-		BA4E9C1C210703FC001123C1 /* vgl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgl.h; sourceTree = "<group>"; };
-		BA4E9C1D210703FC001123C1 /* vmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vmath.h; sourceTree = "<group>"; };
-		BA4E9C1E210703FC001123C1 /* vutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vutils.h; sourceTree = "<group>"; };
-		BA4E9C20210703FC001123C1 /* gl3w.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gl3w.c; sourceTree = "<group>"; };
-		BA4E9C21210703FC001123C1 /* LoadShaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadShaders.cpp; sourceTree = "<group>"; };
-		BA4E9C22210703FC001123C1 /* loadtexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = loadtexture.cpp; sourceTree = "<group>"; };
-		BA4E9C23210703FC001123C1 /* targa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = targa.cpp; sourceTree = "<group>"; };
-		BA4E9C24210703FC001123C1 /* vbm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbm.cpp; sourceTree = "<group>"; };
-		BA4E9C25210703FC001123C1 /* vdds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vdds.cpp; sourceTree = "<group>"; };
-		BA4E9C26210703FC001123C1 /* vermilion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vermilion.cpp; sourceTree = "<group>"; };
 		BA4E9C2F2107040E001123C1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		BA4E9C3121070417001123C1 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		BA4E9C3321070428001123C1 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		BA4E9C3521070448001123C1 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		BA4E9C3B210704AD001123C1 /* keypress.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = keypress.frag; path = ../../MacOpenGL04/MacOpenGL03/keypress.frag; sourceTree = "<group>"; };
 		BA4E9C3D210704B7001123C1 /* keypress.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = keypress.vert; sourceTree = "<group>"; };
+		BA6D7DC8210820B90050201C /* gl3w.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gl3w.c; sourceTree = "<group>"; };
+		BA6D7DC9210820B90050201C /* LoadShaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadShaders.cpp; sourceTree = "<group>"; };
+		BA6D7DCA210820B90050201C /* loadtexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = loadtexture.cpp; sourceTree = "<group>"; };
+		BA6D7DCB210820B90050201C /* targa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = targa.cpp; sourceTree = "<group>"; };
+		BA6D7DCC210820B90050201C /* vbm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbm.cpp; sourceTree = "<group>"; };
+		BA6D7DCD210820B90050201C /* vdds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vdds.cpp; sourceTree = "<group>"; };
+		BA6D7DCE210820B90050201C /* vermilion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vermilion.cpp; sourceTree = "<group>"; };
+		BA6D7DD0210820B90050201C /* CheckError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckError.h; sourceTree = "<group>"; };
+		BA6D7DD1210820B90050201C /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		BA6D7DD2210820B90050201C /* gl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl3.h; sourceTree = "<group>"; };
+		BA6D7DD3210820B90050201C /* gl3w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl3w.h; sourceTree = "<group>"; };
+		BA6D7DD4210820B90050201C /* glcorearb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glcorearb.h; sourceTree = "<group>"; };
+		BA6D7DD5210820B90050201C /* glext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glext.h; sourceTree = "<group>"; };
+		BA6D7DD6210820B90050201C /* LoadShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadShaders.h; sourceTree = "<group>"; };
+		BA6D7DD7210820B90050201C /* mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat.h; sourceTree = "<group>"; };
+		BA6D7DD8210820B90050201C /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teapot.h; sourceTree = "<group>"; };
+		BA6D7DD9210820B90050201C /* vapp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vapp.h; sourceTree = "<group>"; };
+		BA6D7DDA210820B90050201C /* vbm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbm.h; sourceTree = "<group>"; };
+		BA6D7DDB210820B90050201C /* vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec.h; sourceTree = "<group>"; };
+		BA6D7DDC210820B90050201C /* vermilion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vermilion.h; sourceTree = "<group>"; };
+		BA6D7DDD210820B90050201C /* vgl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgl.h; sourceTree = "<group>"; };
+		BA6D7DDE210820B90050201C /* vmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vmath.h; sourceTree = "<group>"; };
+		BA6D7DDF210820B90050201C /* vutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vutils.h; sourceTree = "<group>"; };
 		BA6F020921073F8400C57D65 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,9 +96,9 @@
 		BA4E9BFC210703A7001123C1 /* OpenglMac_03 */ = {
 			isa = PBXGroup;
 			children = (
+				BA6D7DCF210820B90050201C /* include */,
+				BA6D7DC7210820B90050201C /* lib */,
 				BA6F020921073F8400C57D65 /* main.cpp */,
-				BA4E9C0E210703FC001123C1 /* include */,
-				BA4E9C1F210703FC001123C1 /* lib */,
 				BA4E9C00210703A8001123C1 /* Assets.xcassets */,
 				BA4E9C05210703A8001123C1 /* Info.plist */,
 				BA4E9C3B210704AD001123C1 /* keypress.frag */,
@@ -106,45 +106,6 @@
 				BA4E9C08210703A8001123C1 /* OpenglMac_03.entitlements */,
 			);
 			path = OpenglMac_03;
-			sourceTree = "<group>";
-		};
-		BA4E9C0E210703FC001123C1 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				BA4E9C0F210703FC001123C1 /* CheckError.h */,
-				BA4E9C10210703FC001123C1 /* Cube.h */,
-				BA4E9C11210703FC001123C1 /* gl3.h */,
-				BA4E9C12210703FC001123C1 /* gl3w.h */,
-				BA4E9C13210703FC001123C1 /* glcorearb.h */,
-				BA4E9C14210703FC001123C1 /* glext.h */,
-				BA4E9C15210703FC001123C1 /* LoadShaders.h */,
-				BA4E9C16210703FC001123C1 /* mat.h */,
-				BA4E9C17210703FC001123C1 /* Teapot.h */,
-				BA4E9C18210703FC001123C1 /* vapp.h */,
-				BA4E9C19210703FC001123C1 /* vbm.h */,
-				BA4E9C1A210703FC001123C1 /* vec.h */,
-				BA4E9C1B210703FC001123C1 /* vermilion.h */,
-				BA4E9C1C210703FC001123C1 /* vgl.h */,
-				BA4E9C1D210703FC001123C1 /* vmath.h */,
-				BA4E9C1E210703FC001123C1 /* vutils.h */,
-			);
-			name = include;
-			path = ../../MacOpenGL04/MacOpenGL03/include;
-			sourceTree = "<group>";
-		};
-		BA4E9C1F210703FC001123C1 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				BA4E9C20210703FC001123C1 /* gl3w.c */,
-				BA4E9C21210703FC001123C1 /* LoadShaders.cpp */,
-				BA4E9C22210703FC001123C1 /* loadtexture.cpp */,
-				BA4E9C23210703FC001123C1 /* targa.cpp */,
-				BA4E9C24210703FC001123C1 /* vbm.cpp */,
-				BA4E9C25210703FC001123C1 /* vdds.cpp */,
-				BA4E9C26210703FC001123C1 /* vermilion.cpp */,
-			);
-			name = lib;
-			path = ../../MacOpenGL04/MacOpenGL03/lib;
 			sourceTree = "<group>";
 		};
 		BA4E9C2E2107040E001123C1 /* Frameworks */ = {
@@ -156,6 +117,43 @@
 				BA4E9C2F2107040E001123C1 /* OpenGL.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA6D7DC7210820B90050201C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BA6D7DC8210820B90050201C /* gl3w.c */,
+				BA6D7DC9210820B90050201C /* LoadShaders.cpp */,
+				BA6D7DCA210820B90050201C /* loadtexture.cpp */,
+				BA6D7DCB210820B90050201C /* targa.cpp */,
+				BA6D7DCC210820B90050201C /* vbm.cpp */,
+				BA6D7DCD210820B90050201C /* vdds.cpp */,
+				BA6D7DCE210820B90050201C /* vermilion.cpp */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		BA6D7DCF210820B90050201C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BA6D7DD0210820B90050201C /* CheckError.h */,
+				BA6D7DD1210820B90050201C /* Cube.h */,
+				BA6D7DD2210820B90050201C /* gl3.h */,
+				BA6D7DD3210820B90050201C /* gl3w.h */,
+				BA6D7DD4210820B90050201C /* glcorearb.h */,
+				BA6D7DD5210820B90050201C /* glext.h */,
+				BA6D7DD6210820B90050201C /* LoadShaders.h */,
+				BA6D7DD7210820B90050201C /* mat.h */,
+				BA6D7DD8210820B90050201C /* Teapot.h */,
+				BA6D7DD9210820B90050201C /* vapp.h */,
+				BA6D7DDA210820B90050201C /* vbm.h */,
+				BA6D7DDB210820B90050201C /* vec.h */,
+				BA6D7DDC210820B90050201C /* vermilion.h */,
+				BA6D7DDD210820B90050201C /* vgl.h */,
+				BA6D7DDE210820B90050201C /* vmath.h */,
+				BA6D7DDF210820B90050201C /* vutils.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,14 +226,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA4E9C2A210703FC001123C1 /* targa.cpp in Sources */,
-				BA4E9C27210703FC001123C1 /* gl3w.c in Sources */,
-				BA4E9C29210703FC001123C1 /* loadtexture.cpp in Sources */,
-				BA4E9C2D210703FC001123C1 /* vermilion.cpp in Sources */,
-				BA4E9C2B210703FC001123C1 /* vbm.cpp in Sources */,
-				BA4E9C28210703FC001123C1 /* LoadShaders.cpp in Sources */,
+				BA6D7DE3210820B90050201C /* targa.cpp in Sources */,
+				BA6D7DE0210820B90050201C /* gl3w.c in Sources */,
+				BA6D7DE2210820B90050201C /* loadtexture.cpp in Sources */,
+				BA6D7DE6210820B90050201C /* vermilion.cpp in Sources */,
+				BA6D7DE4210820B90050201C /* vbm.cpp in Sources */,
+				BA6D7DE1210820B90050201C /* LoadShaders.cpp in Sources */,
 				BA6F020A21073F8400C57D65 /* main.cpp in Sources */,
-				BA4E9C2C210703FC001123C1 /* vdds.cpp in Sources */,
+				BA6D7DE5210820B90050201C /* vdds.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
