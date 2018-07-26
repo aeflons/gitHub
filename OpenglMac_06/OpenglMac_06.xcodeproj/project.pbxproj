@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA10DE992109B64B004D63BF /* setData.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA10DE982109B64B004D63BF /* setData.frag */; };
+		BA692DCD2109CA0E00704DF8 /* test.dds in Resources */ = {isa = PBXBuildFile; fileRef = BA692DCC2109CA0E00704DF8 /* test.dds */; };
+		BA692DD52109E27000704DF8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA692DD42109E27000704DF8 /* main.cpp */; };
 		BA6D7D5021081FDE0050201C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7D4F21081FDE0050201C /* Assets.xcassets */; };
 		BA6D7E00210820C40050201C /* gl3w.c in Sources */ = {isa = PBXBuildFile; fileRef = BA6D7DF9210820C40050201C /* gl3w.c */; };
 		BA6D7E01210820C40050201C /* LoadShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6D7DFA210820C40050201C /* LoadShaders.cpp */; };
@@ -19,14 +22,17 @@
 		BA6D7E0B210820DC0050201C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6D7E0A210820DC0050201C /* GLUT.framework */; };
 		BA6D7E0D210820FC0050201C /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6D7E0C210820FC0050201C /* libGLEW.2.1.0.dylib */; };
 		BA6D7E0F2108210E0050201C /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6D7E0E2108210E0050201C /* libglfw.3.2.dylib */; };
-		BA6D7E11210821900050201C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6D7E10210821900050201C /* main.cpp */; };
 		BA6D7E13210857A00050201C /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6D7E12210857A00050201C /* libSOIL.a */; };
 		BA6D7E1621085D350050201C /* wood.png in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7E1521085D350050201C /* wood.png */; };
 		BA6D7E182108755E0050201C /* qipan.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7E172108755E0050201C /* qipan.vert */; };
 		BA6D7E1A210875710050201C /* qipan.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7E19210875710050201C /* qipan.frag */; };
+		BA6D7E202109602F0050201C /* setData.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7E1E2109602F0050201C /* setData.vert */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA10DE982109B64B004D63BF /* setData.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = setData.frag; sourceTree = "<group>"; };
+		BA692DCC2109CA0E00704DF8 /* test.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.dds; sourceTree = "<group>"; };
+		BA692DD42109E27000704DF8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Souce/Sample/main.cpp; sourceTree = "<group>"; };
 		BA6D7D4921081FDD0050201C /* OpenglMac_06.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenglMac_06.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6D7D4F21081FDE0050201C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA6D7D5421081FDE0050201C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,12 +64,12 @@
 		BA6D7E0A210820DC0050201C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		BA6D7E0C210820FC0050201C /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		BA6D7E0E2108210E0050201C /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
-		BA6D7E10210821900050201C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "Souce/棋盘/main.cpp"; sourceTree = "<group>"; };
 		BA6D7E12210857A00050201C /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSOIL.a; sourceTree = "<group>"; };
 		BA6D7E1421085C0F0050201C /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
 		BA6D7E1521085D350050201C /* wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood.png; sourceTree = "<group>"; };
 		BA6D7E172108755E0050201C /* qipan.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = qipan.vert; sourceTree = "<group>"; };
 		BA6D7E19210875710050201C /* qipan.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = qipan.frag; sourceTree = "<group>"; };
+		BA6D7E1E2109602F0050201C /* setData.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = setData.vert; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,15 +108,18 @@
 		BA6D7D4B21081FDD0050201C /* OpenglMac_06 */ = {
 			isa = PBXGroup;
 			children = (
+				BA692DD42109E27000704DF8 /* main.cpp */,
 				BA6D7E1521085D350050201C /* wood.png */,
 				BA6D7E12210857A00050201C /* libSOIL.a */,
+				BA692DCC2109CA0E00704DF8 /* test.dds */,
 				BA6D7E1421085C0F0050201C /* SOIL.h */,
 				BA6D7DE7210820C40050201C /* include */,
 				BA6D7DF8210820C40050201C /* lib */,
 				BA6D7D4F21081FDE0050201C /* Assets.xcassets */,
 				BA6D7D5421081FDE0050201C /* Info.plist */,
 				BA6D7D5721081FDE0050201C /* OpenglMac_06.entitlements */,
-				BA6D7E10210821900050201C /* main.cpp */,
+				BA10DE982109B64B004D63BF /* setData.frag */,
+				BA6D7E1E2109602F0050201C /* setData.vert */,
 				BA6D7E172108755E0050201C /* qipan.vert */,
 				BA6D7E19210875710050201C /* qipan.frag */,
 			);
@@ -223,9 +232,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6D7E1621085D350050201C /* wood.png in Resources */,
+				BA6D7E202109602F0050201C /* setData.vert in Resources */,
+				BA10DE992109B64B004D63BF /* setData.frag in Resources */,
 				BA6D7E1A210875710050201C /* qipan.frag in Resources */,
 				BA6D7E182108755E0050201C /* qipan.vert in Resources */,
 				BA6D7D5021081FDE0050201C /* Assets.xcassets in Resources */,
+				BA692DCD2109CA0E00704DF8 /* test.dds in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,11 +250,11 @@
 			files = (
 				BA6D7E01210820C40050201C /* LoadShaders.cpp in Sources */,
 				BA6D7E03210820C40050201C /* targa.cpp in Sources */,
+				BA692DD52109E27000704DF8 /* main.cpp in Sources */,
 				BA6D7E05210820C40050201C /* vdds.cpp in Sources */,
 				BA6D7E06210820C40050201C /* vermilion.cpp in Sources */,
 				BA6D7E00210820C40050201C /* gl3w.c in Sources */,
 				BA6D7E04210820C40050201C /* vbm.cpp in Sources */,
-				BA6D7E11210821900050201C /* main.cpp in Sources */,
 				BA6D7E02210820C40050201C /* loadtexture.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

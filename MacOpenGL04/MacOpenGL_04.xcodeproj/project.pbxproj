@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA10DE9321096ED2004D63BF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE9221096ED2004D63BF /* main.cpp */; };
 		BA2237C621008EEF00E8BD3F /* primitive_restart.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA2237C421008EEF00E8BD3F /* primitive_restart.frag */; };
 		BA2237C721008EEF00E8BD3F /* primitive_restart.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA2237C521008EEF00E8BD3F /* primitive_restart.vert */; };
-		BA4E9C452107165E001123C1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA4E9C442107165E001123C1 /* main.cpp */; };
 		BAE9399A20FA424100C96F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE9399920FA424100C96F95 /* Assets.xcassets */; };
 		BAE939A920FA42B200C96F95 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE939A820FA42A900C96F95 /* OpenGL.framework */; };
 		BAE939C520FA445D00C96F95 /* gl3w.c in Sources */ = {isa = PBXBuildFile; fileRef = BAE939BE20FA445D00C96F95 /* gl3w.c */; };
@@ -27,9 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA10DE9221096ED2004D63BF /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = MainSource/MultiDraw/main.cpp; sourceTree = "<group>"; };
 		BA2237C421008EEF00E8BD3F /* primitive_restart.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = primitive_restart.frag; sourceTree = "<group>"; };
 		BA2237C521008EEF00E8BD3F /* primitive_restart.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = primitive_restart.vert; sourceTree = "<group>"; };
-		BA4E9C442107165E001123C1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = MainSource/DrawInDriect/main.cpp; sourceTree = "<group>"; };
 		BAE9399020FA424100C96F95 /* MacOpenGL_04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOpenGL_04.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE9399920FA424100C96F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAE9399E20FA424100C96F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		BAE9399220FA424100C96F95 /* MacOpenGL03 */ = {
 			isa = PBXGroup;
 			children = (
-				BA4E9C442107165E001123C1 /* main.cpp */,
+				BA10DE9221096ED2004D63BF /* main.cpp */,
 				BAE939BD20FA445D00C96F95 /* lib */,
 				BAE939AC20FA445700C96F95 /* include */,
 				BAE9399920FA424100C96F95 /* Assets.xcassets */,
@@ -241,7 +241,7 @@
 				BAE939CB20FA445D00C96F95 /* vermilion.cpp in Sources */,
 				BAE939C920FA445D00C96F95 /* vbm.cpp in Sources */,
 				BAE939C620FA445D00C96F95 /* LoadShaders.cpp in Sources */,
-				BA4E9C452107165E001123C1 /* main.cpp in Sources */,
+				BA10DE9321096ED2004D63BF /* main.cpp in Sources */,
 				BAE939CA20FA445D00C96F95 /* vdds.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

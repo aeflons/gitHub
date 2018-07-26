@@ -1,15 +1,13 @@
 
-#version 330
+#version 410 core
 
-layout(location = 0) in vec3 VertColor;
-layout(location = 1) in vec2 TextCoord;
+in vec2 tex_coord;
+
+layout (location = 0) out vec4 color;
 
 uniform sampler2D tex;
 
-out vec4 color;
-
-
-void main()
+void main(void)
 {
-    color = texture(tex, TextCoord);
+    color = texture(0.2,0.2, tex_coord);
 }

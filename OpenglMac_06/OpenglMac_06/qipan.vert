@@ -1,15 +1,13 @@
-#version 330
+#version 410 core
 
-layout(location = 0) in vec3 position;
-layout(location = 1) in vec3 color;
-layout(location = 2) in vec2 textCoord; // 纹理坐标
+layout (location = 0) in vec2 in_position;
+layout (location = 1) in vec2 in_tex_coord;
 
-out vec3 VertColor;
-out vec2 TextCoord;
+out vec2 tex_coord;
 
-void main()
+void main(void)
 {
-    gl_Position = vec4(position, 1.0);
-    VertColor = color;
-    TextCoord = textCoord;
+    gl_Position = vec4(in_position, 0.5, 1.0);
+    tex_coord = in_tex_coord;
 }
+
