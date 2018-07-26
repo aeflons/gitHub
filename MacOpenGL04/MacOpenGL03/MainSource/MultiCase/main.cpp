@@ -126,7 +126,7 @@ void display(){
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo[0]);
     model_matrix = vmath::translate(-1.0f, 0.0f, -5.0f);
     glUniformMatrix4fv(render_model_matrix_loc, 1, GL_FALSE, model_matrix);
-    glDrawArrays(GL_TRIANGLE_STRIP, 0, 8);
+    //glDrawArrays(GL_TRIANGLE_STRIP, 0, 8);
     
 #if USE_PRIMITIVE_RESTART
     glEnable(GL_PRIMITIVE_RESTART);
