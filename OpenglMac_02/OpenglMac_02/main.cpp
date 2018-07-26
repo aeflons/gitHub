@@ -20,7 +20,7 @@ GLuint Program;
 GLuint vert;
 GLuint ubo;
 void init(){
-    ShaderInfo shaders[] = {{GL_VERTEX_SHADER,"primitive_restart.v"},{GL_FRAGMENT_SHADER,"primitive_restart.g"},{GL_NONE,NULL}};
+    ShaderInfo shaders[] = {{GL_VERTEX_SHADER,"UniformBlock.v"},{GL_FRAGMENT_SHADER,"UniformBlock.g"},{GL_NONE,NULL}};
     Program = LoadShaders(shaders);
     
     glGenVertexArrays(1,&vert);
