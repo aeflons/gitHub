@@ -33,10 +33,12 @@ GLuint texFrame;
 GLuint vertFrame;
 GLuint vboFrame;
 Vertex VertsFrame[] = {
-	{ { 0.22f,0.22f,0.0f },{ 0.0f,0.0f } },
-	{ { 0.8f,0.22f,0.0f },{ 2.0f,0.0f } },
-	{ { 0.22f,0.8f,0.0f },{ 0.0f,2.0f } },
-	{ { 0.8f,0.8f,0.0f },{ 2.0f,2.0f } }, };
+//    { { 0.22f,0.22f,0.0f },{ 0.0f,0.0f } },
+//    { { 0.8f,0.22f,0.0f },{ 2.0f,0.0f } },
+//    { { 0.22f,0.8f,0.0f },{ 0.0f,2.0f } },
+//    { { 0.8f,0.8f,0.0f },{ 2.0f,2.0f } },
+    
+};
 
 
 GLuint Samplers[2];
@@ -69,10 +71,10 @@ void Init()
 	glEnableVertexAttribArray(1);
 	glBindVertexArray(0);
 
-	float texData[] = { 1.0, 1.0, 0.0, 1.0,
-		1.0, 0.0, 1.0, 1.0,
-		0.0, 1.0, 1.0, 1.0,
-		0.0, 1.0 ,0.0, 1.0 };
+	float texData[] = { 1.0, 1.0, 0.0, 1.0,//黄色
+		1.0, 0.0, 1.0, 1.0,//粉红
+		0.0, 1.0, 1.0, 1.0,//青色
+		0.0, 1.0 ,0.0, 1.0 };//绿色
 	GLuint PiexlUnpack;
 	glGenBuffers(1, &PiexlUnpack);
 	glBindBuffer(GL_PIXEL_UNPACK_BUFFER, PiexlUnpack);
@@ -80,11 +82,11 @@ void Init()
 
 	glGenTextures(1, &tex);
 	glBindTexture(GL_TEXTURE_2D, tex);
-	glTexStorage2D(GL_TEXTURE_2D, 2, GL_RGBA8, 2, 2);
+	glTexStorage2D(GL_TEXTURE_2D, 2, GL_RGBA8, 3, 3);
 	glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, 2, 2, GL_RGBA, GL_FLOAT, NULL);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 //    glGenSamplers(1, Samplers);
 //    glSamplerParameteri(Samplers[0], GL_TEXTURE_MIN_FILTER, GL_NEAREST);

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BA10DE992109B64B004D63BF /* setData.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA10DE982109B64B004D63BF /* setData.frag */; };
 		BA692DCD2109CA0E00704DF8 /* test.dds in Resources */ = {isa = PBXBuildFile; fileRef = BA692DCC2109CA0E00704DF8 /* test.dds */; };
-		BA692DD52109E27000704DF8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA692DD42109E27000704DF8 /* main.cpp */; };
 		BA6D7D5021081FDE0050201C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7D4F21081FDE0050201C /* Assets.xcassets */; };
 		BA6D7E00210820C40050201C /* gl3w.c in Sources */ = {isa = PBXBuildFile; fileRef = BA6D7DF9210820C40050201C /* gl3w.c */; };
 		BA6D7E01210820C40050201C /* LoadShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6D7DFA210820C40050201C /* LoadShaders.cpp */; };
@@ -22,17 +21,26 @@
 		BA6D7E0B210820DC0050201C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6D7E0A210820DC0050201C /* GLUT.framework */; };
 		BA6D7E0D210820FC0050201C /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6D7E0C210820FC0050201C /* libGLEW.2.1.0.dylib */; };
 		BA6D7E0F2108210E0050201C /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6D7E0E2108210E0050201C /* libglfw.3.2.dylib */; };
-		BA6D7E13210857A00050201C /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6D7E12210857A00050201C /* libSOIL.a */; };
 		BA6D7E1621085D350050201C /* wood.png in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7E1521085D350050201C /* wood.png */; };
 		BA6D7E182108755E0050201C /* qipan.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7E172108755E0050201C /* qipan.vert */; };
 		BA6D7E1A210875710050201C /* qipan.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7E19210875710050201C /* qipan.frag */; };
 		BA6D7E202109602F0050201C /* setData.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7E1E2109602F0050201C /* setData.vert */; };
+		BA9EC515210AFE7200A82A9B /* TextureView.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA9EC513210AFE7100A82A9B /* TextureView.frag */; };
+		BA9EC516210AFE7200A82A9B /* TextureView.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA9EC514210AFE7200A82A9B /* TextureView.vert */; };
+		BA9EC518210B02AB00A82A9B /* TantolundenCube.dds in Resources */ = {isa = PBXBuildFile; fileRef = BA9EC517210B02AB00A82A9B /* TantolundenCube.dds */; };
+		BACC51E5210B0FDE003B38C6 /* mian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BACC51E4210B0FDE003B38C6 /* mian.cpp */; };
+		BACC51E7210B105F003B38C6 /* cnWenli.vert in Resources */ = {isa = PBXBuildFile; fileRef = BACC51E6210B105F003B38C6 /* cnWenli.vert */; };
+		BACC51E9210B106C003B38C6 /* cnWenli.frag in Resources */ = {isa = PBXBuildFile; fileRef = BACC51E8210B106C003B38C6 /* cnWenli.frag */; };
+		BACC51EB210B1422003B38C6 /* img_cheryl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BACC51EA210B1422003B38C6 /* img_cheryl.jpg */; };
+		BAFB5DD7210B0C9100E8E01E /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = BAFB5DD3210B0C9100E8E01E /* stb_image_aug.c */; };
+		BAFB5DD8210B0C9100E8E01E /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = BAFB5DD4210B0C9100E8E01E /* SOIL.c */; };
+		BAFB5DDD210B0CC500E8E01E /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = BAFB5DDA210B0CC500E8E01E /* image_helper.c */; };
+		BAFB5DDE210B0CC500E8E01E /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = BAFB5DDB210B0CC500E8E01E /* image_DXT.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA10DE982109B64B004D63BF /* setData.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = setData.frag; sourceTree = "<group>"; };
 		BA692DCC2109CA0E00704DF8 /* test.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.dds; sourceTree = "<group>"; };
-		BA692DD42109E27000704DF8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Souce/Sample/main.cpp; sourceTree = "<group>"; };
 		BA6D7D4921081FDD0050201C /* OpenglMac_06.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenglMac_06.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6D7D4F21081FDE0050201C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA6D7D5421081FDE0050201C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,12 +72,27 @@
 		BA6D7E0A210820DC0050201C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		BA6D7E0C210820FC0050201C /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		BA6D7E0E2108210E0050201C /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
-		BA6D7E12210857A00050201C /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSOIL.a; sourceTree = "<group>"; };
-		BA6D7E1421085C0F0050201C /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
 		BA6D7E1521085D350050201C /* wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood.png; sourceTree = "<group>"; };
 		BA6D7E172108755E0050201C /* qipan.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = qipan.vert; sourceTree = "<group>"; };
 		BA6D7E19210875710050201C /* qipan.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = qipan.frag; sourceTree = "<group>"; };
 		BA6D7E1E2109602F0050201C /* setData.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = setData.vert; sourceTree = "<group>"; };
+		BA9EC513210AFE7100A82A9B /* TextureView.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TextureView.frag; sourceTree = "<group>"; };
+		BA9EC514210AFE7200A82A9B /* TextureView.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TextureView.vert; sourceTree = "<group>"; };
+		BA9EC517210B02AB00A82A9B /* TantolundenCube.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = TantolundenCube.dds; sourceTree = "<group>"; };
+		BACC51E4210B0FDE003B38C6 /* mian.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mian.cpp; path = Souce/cnWenli/mian.cpp; sourceTree = "<group>"; };
+		BACC51E6210B105F003B38C6 /* cnWenli.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cnWenli.vert; sourceTree = "<group>"; };
+		BACC51E8210B106C003B38C6 /* cnWenli.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cnWenli.frag; sourceTree = "<group>"; };
+		BACC51EA210B1422003B38C6 /* img_cheryl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_cheryl.jpg; sourceTree = "<group>"; };
+		BAFB5DD0210B0C9100E8E01E /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOIL.h; path = "../../../../../../Downloads/Simple OpenGL Image Library/src/SOIL.h"; sourceTree = "<group>"; };
+		BAFB5DD1210B0C9100E8E01E /* stbi_DDS_aug_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug_c.h; sourceTree = "<group>"; };
+		BAFB5DD2210B0C9100E8E01E /* stbi_DDS_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug.h; sourceTree = "<group>"; };
+		BAFB5DD3210B0C9100E8E01E /* stb_image_aug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_aug.c; sourceTree = "<group>"; };
+		BAFB5DD4210B0C9100E8E01E /* SOIL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL.c; sourceTree = "<group>"; };
+		BAFB5DD5210B0C9100E8E01E /* stb_image_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_aug.h; sourceTree = "<group>"; };
+		BAFB5DD9210B0CC500E8E01E /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
+		BAFB5DDA210B0CC500E8E01E /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
+		BAFB5DDB210B0CC500E8E01E /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
+		BAFB5DDC210B0CC500E8E01E /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +103,6 @@
 				BA6D7E0F2108210E0050201C /* libglfw.3.2.dylib in Frameworks */,
 				BA6D7E0D210820FC0050201C /* libGLEW.2.1.0.dylib in Frameworks */,
 				BA6D7E0B210820DC0050201C /* GLUT.framework in Frameworks */,
-				BA6D7E13210857A00050201C /* libSOIL.a in Frameworks */,
 				BA6D7E09210820D60050201C /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,11 +130,11 @@
 		BA6D7D4B21081FDD0050201C /* OpenglMac_06 */ = {
 			isa = PBXGroup;
 			children = (
-				BA692DD42109E27000704DF8 /* main.cpp */,
+				BAFB5DCE210B0C6C00E8E01E /* soil */,
 				BA6D7E1521085D350050201C /* wood.png */,
-				BA6D7E12210857A00050201C /* libSOIL.a */,
+				BACC51EA210B1422003B38C6 /* img_cheryl.jpg */,
 				BA692DCC2109CA0E00704DF8 /* test.dds */,
-				BA6D7E1421085C0F0050201C /* SOIL.h */,
+				BACC51E4210B0FDE003B38C6 /* mian.cpp */,
 				BA6D7DE7210820C40050201C /* include */,
 				BA6D7DF8210820C40050201C /* lib */,
 				BA6D7D4F21081FDE0050201C /* Assets.xcassets */,
@@ -122,6 +144,11 @@
 				BA6D7E1E2109602F0050201C /* setData.vert */,
 				BA6D7E172108755E0050201C /* qipan.vert */,
 				BA6D7E19210875710050201C /* qipan.frag */,
+				BA9EC513210AFE7100A82A9B /* TextureView.frag */,
+				BA9EC514210AFE7200A82A9B /* TextureView.vert */,
+				BA9EC517210B02AB00A82A9B /* TantolundenCube.dds */,
+				BACC51E6210B105F003B38C6 /* cnWenli.vert */,
+				BACC51E8210B106C003B38C6 /* cnWenli.frag */,
 			);
 			path = OpenglMac_06;
 			sourceTree = "<group>";
@@ -172,6 +199,23 @@
 				BA6D7E08210820D60050201C /* OpenGL.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAFB5DCE210B0C6C00E8E01E /* soil */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB5DDB210B0CC500E8E01E /* image_DXT.c */,
+				BAFB5DDC210B0CC500E8E01E /* image_DXT.h */,
+				BAFB5DDA210B0CC500E8E01E /* image_helper.c */,
+				BAFB5DD9210B0CC500E8E01E /* image_helper.h */,
+				BAFB5DD4210B0C9100E8E01E /* SOIL.c */,
+				BAFB5DD0210B0C9100E8E01E /* SOIL.h */,
+				BAFB5DD3210B0C9100E8E01E /* stb_image_aug.c */,
+				BAFB5DD5210B0C9100E8E01E /* stb_image_aug.h */,
+				BAFB5DD1210B0C9100E8E01E /* stbi_DDS_aug_c.h */,
+				BAFB5DD2210B0C9100E8E01E /* stbi_DDS_aug.h */,
+			);
+			path = soil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,11 +277,17 @@
 			files = (
 				BA6D7E1621085D350050201C /* wood.png in Resources */,
 				BA6D7E202109602F0050201C /* setData.vert in Resources */,
+				BA9EC515210AFE7200A82A9B /* TextureView.frag in Resources */,
+				BA9EC516210AFE7200A82A9B /* TextureView.vert in Resources */,
 				BA10DE992109B64B004D63BF /* setData.frag in Resources */,
+				BACC51EB210B1422003B38C6 /* img_cheryl.jpg in Resources */,
 				BA6D7E1A210875710050201C /* qipan.frag in Resources */,
+				BACC51E9210B106C003B38C6 /* cnWenli.frag in Resources */,
 				BA6D7E182108755E0050201C /* qipan.vert in Resources */,
+				BA9EC518210B02AB00A82A9B /* TantolundenCube.dds in Resources */,
 				BA6D7D5021081FDE0050201C /* Assets.xcassets in Resources */,
 				BA692DCD2109CA0E00704DF8 /* test.dds in Resources */,
+				BACC51E7210B105F003B38C6 /* cnWenli.vert in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,13 +298,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFB5DDE210B0CC500E8E01E /* image_DXT.c in Sources */,
+				BAFB5DD7210B0C9100E8E01E /* stb_image_aug.c in Sources */,
 				BA6D7E01210820C40050201C /* LoadShaders.cpp in Sources */,
 				BA6D7E03210820C40050201C /* targa.cpp in Sources */,
-				BA692DD52109E27000704DF8 /* main.cpp in Sources */,
 				BA6D7E05210820C40050201C /* vdds.cpp in Sources */,
 				BA6D7E06210820C40050201C /* vermilion.cpp in Sources */,
 				BA6D7E00210820C40050201C /* gl3w.c in Sources */,
+				BAFB5DD8210B0C9100E8E01E /* SOIL.c in Sources */,
+				BAFB5DDD210B0CC500E8E01E /* image_helper.c in Sources */,
 				BA6D7E04210820C40050201C /* vbm.cpp in Sources */,
+				BACC51E5210B0FDE003B38C6 /* mian.cpp in Sources */,
 				BA6D7E02210820C40050201C /* loadtexture.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,8 +448,11 @@
 					/usr/local/Cellar/glfw/3.2.1/lib,
 					"$(PROJECT_DIR)/OpenglMac_06",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "alfons.OpenglMac-06";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -422,8 +479,11 @@
 					/usr/local/Cellar/glfw/3.2.1/lib,
 					"$(PROJECT_DIR)/OpenglMac_06",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "alfons.OpenglMac-06";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
