@@ -25,10 +25,12 @@
 		BA6D7E182108755E0050201C /* qipan.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7E172108755E0050201C /* qipan.vert */; };
 		BA6D7E1A210875710050201C /* qipan.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7E19210875710050201C /* qipan.frag */; };
 		BA6D7E202109602F0050201C /* setData.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7E1E2109602F0050201C /* setData.vert */; };
+		BA9A2643210F795400BBE973 /* mian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA9A2642210F795400BBE973 /* mian.cpp */; };
+		BA9A2645210F7FB200BBE973 /* unit_cube.vbm in Resources */ = {isa = PBXBuildFile; fileRef = BA9A2644210F7FB200BBE973 /* unit_cube.vbm */; };
+		BA9A2647210F7FC500BBE973 /* TantolundenCube.dds in Resources */ = {isa = PBXBuildFile; fileRef = BA9A2646210F7FC500BBE973 /* TantolundenCube.dds */; };
 		BA9EC515210AFE7200A82A9B /* TextureView.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA9EC513210AFE7100A82A9B /* TextureView.frag */; };
 		BA9EC516210AFE7200A82A9B /* TextureView.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA9EC514210AFE7200A82A9B /* TextureView.vert */; };
 		BA9EC518210B02AB00A82A9B /* TantolundenCube.dds in Resources */ = {isa = PBXBuildFile; fileRef = BA9EC517210B02AB00A82A9B /* TantolundenCube.dds */; };
-		BACC51E5210B0FDE003B38C6 /* mian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BACC51E4210B0FDE003B38C6 /* mian.cpp */; };
 		BACC51E7210B105F003B38C6 /* cnWenli.vert in Resources */ = {isa = PBXBuildFile; fileRef = BACC51E6210B105F003B38C6 /* cnWenli.vert */; };
 		BACC51E9210B106C003B38C6 /* cnWenli.frag in Resources */ = {isa = PBXBuildFile; fileRef = BACC51E8210B106C003B38C6 /* cnWenli.frag */; };
 		BACC51EB210B1422003B38C6 /* img_cheryl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BACC51EA210B1422003B38C6 /* img_cheryl.jpg */; };
@@ -76,11 +78,13 @@
 		BA6D7E172108755E0050201C /* qipan.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = qipan.vert; sourceTree = "<group>"; };
 		BA6D7E19210875710050201C /* qipan.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = qipan.frag; sourceTree = "<group>"; };
 		BA6D7E1E2109602F0050201C /* setData.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = setData.vert; sourceTree = "<group>"; };
+		BA9A2642210F795400BBE973 /* mian.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mian.cpp; path = "天空盒/mian.cpp"; sourceTree = "<group>"; };
+		BA9A2644210F7FB200BBE973 /* unit_cube.vbm */ = {isa = PBXFileReference; lastKnownFileType = file; path = unit_cube.vbm; sourceTree = "<group>"; };
+		BA9A2646210F7FC500BBE973 /* TantolundenCube.dds */ = {isa = PBXFileReference; lastKnownFileType = file; name = TantolundenCube.dds; path = "../../../../OpenGL/OpenGL编程指南/media/TantolundenCube.dds"; sourceTree = "<group>"; };
 		BA9EC513210AFE7100A82A9B /* TextureView.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TextureView.frag; sourceTree = "<group>"; };
 		BA9EC514210AFE7200A82A9B /* TextureView.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TextureView.vert; sourceTree = "<group>"; };
 		BA9EC517210B02AB00A82A9B /* TantolundenCube.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = TantolundenCube.dds; sourceTree = "<group>"; };
 		BAC44A1C210CDFDD00A78EFC /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
-		BACC51E4210B0FDE003B38C6 /* mian.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mian.cpp; path = Souce/cnWenli/mian.cpp; sourceTree = "<group>"; };
 		BACC51E6210B105F003B38C6 /* cnWenli.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cnWenli.vert; sourceTree = "<group>"; };
 		BACC51E8210B106C003B38C6 /* cnWenli.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cnWenli.frag; sourceTree = "<group>"; };
 		BACC51EA210B1422003B38C6 /* img_cheryl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_cheryl.jpg; sourceTree = "<group>"; };
@@ -134,7 +138,7 @@
 				BA6D7E1521085D350050201C /* wood.png */,
 				BACC51EA210B1422003B38C6 /* img_cheryl.jpg */,
 				BA692DCC2109CA0E00704DF8 /* test.dds */,
-				BACC51E4210B0FDE003B38C6 /* mian.cpp */,
+				BA9A2642210F795400BBE973 /* mian.cpp */,
 				BA6D7DE7210820C40050201C /* include */,
 				BA6D7DF8210820C40050201C /* lib */,
 				BA6D7D4F21081FDE0050201C /* Assets.xcassets */,
@@ -149,6 +153,8 @@
 				BA9EC517210B02AB00A82A9B /* TantolundenCube.dds */,
 				BACC51E6210B105F003B38C6 /* cnWenli.vert */,
 				BACC51E8210B106C003B38C6 /* cnWenli.frag */,
+				BA9A2644210F7FB200BBE973 /* unit_cube.vbm */,
+				BA9A2646210F7FC500BBE973 /* TantolundenCube.dds */,
 			);
 			path = OpenglMac_06;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 			files = (
 				BA6D7E1621085D350050201C /* wood.png in Resources */,
 				BA6D7E202109602F0050201C /* setData.vert in Resources */,
+				BA9A2645210F7FB200BBE973 /* unit_cube.vbm in Resources */,
 				BA9EC515210AFE7200A82A9B /* TextureView.frag in Resources */,
 				BA9EC516210AFE7200A82A9B /* TextureView.vert in Resources */,
 				BA10DE992109B64B004D63BF /* setData.frag in Resources */,
@@ -286,6 +293,7 @@
 				BA6D7E182108755E0050201C /* qipan.vert in Resources */,
 				BA9EC518210B02AB00A82A9B /* TantolundenCube.dds in Resources */,
 				BA6D7D5021081FDE0050201C /* Assets.xcassets in Resources */,
+				BA9A2647210F7FC500BBE973 /* TantolundenCube.dds in Resources */,
 				BA692DCD2109CA0E00704DF8 /* test.dds in Resources */,
 				BACC51E7210B105F003B38C6 /* cnWenli.vert in Resources */,
 			);
@@ -308,7 +316,7 @@
 				BAFB5DD8210B0C9100E8E01E /* SOIL.c in Sources */,
 				BAFB5DDD210B0CC500E8E01E /* image_helper.c in Sources */,
 				BA6D7E04210820C40050201C /* vbm.cpp in Sources */,
-				BACC51E5210B0FDE003B38C6 /* mian.cpp in Sources */,
+				BA9A2643210F795400BBE973 /* mian.cpp in Sources */,
 				BA6D7E02210820C40050201C /* loadtexture.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

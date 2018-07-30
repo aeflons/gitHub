@@ -38,7 +38,7 @@ void Init()
     ShaderInfo si[] = { { GL_VERTEX_SHADER, "cnWenli.vert" },{ GL_FRAGMENT_SHADER, "cnWenli.frag" },{ GL_NONE, NULL } };
     Program = LoadShaders(si);
     glUseProgram(Program);
-    GLuint t = glGetAttribLocation(Program, "texCoord");
+    GLuint t = glGetUniformLocation(Program, "mixInValue");
 
     GLfloat vertices[] = {
         // Positions          // Colors           // Texture Coords
@@ -129,17 +129,13 @@ void Display()
     // Bind Textures using texture units
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture1);
-    GLuint t =glGetUniformLocation(Program, "mixInValue") ;
     glUniform1i(0, 0);
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, texture2);
     glUniform1i(0, 1);
 
-    //glUniform1i(2, mixValue);
+    glUniform1f(glGetUniformLocation(Program, "mixInValue"),mixValue);
 
-
-    glUniform1i(2, mixValue);
- glUniform1f(glGetUniformLocation(Program, "mixInValue"), mixValue);
     // Draw container
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
@@ -154,23 +150,9 @@ void Display()
 }
 
 void keyboard(unsigned char key, int x, int y){
-    if (key == GLUT_ENTERED){
-        exit(0);
-    }
-        // Change value of uniform with arrow keys (sets amount of textre mix)
-    if (key == GLUT_KEY_UP)
-        {
-            mixValue += 0.1f;
-            if (mixValue >= 1.0f){
-                mixValue = 1.0f;
-            }
-                }
-    if (key == GLUT_KEY_DOWN)
-    {
-        mixValue -= 0.1f;
-        if (mixValue <= 0.0f){
-            mixValue = 0.0f;
-        }
+    mixValue += 0.1f;
+    if (mixValue >= 1.0f){
+        mixValue = 1.0f;
     }
 }
 
