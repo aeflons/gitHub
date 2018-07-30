@@ -133,8 +133,8 @@ void Display()
     glUniform1i(0, 0);
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, texture2);
-    glUniform1i(1, 1);
-    glUniform1i(2, mixValue);
+    glUniform1i(0, 1);
+    //glUniform1i(2, mixValue);
 
     // Draw container
     glBindVertexArray(VAO);

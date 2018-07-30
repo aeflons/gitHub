@@ -79,11 +79,11 @@
 		BA9EC513210AFE7100A82A9B /* TextureView.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TextureView.frag; sourceTree = "<group>"; };
 		BA9EC514210AFE7200A82A9B /* TextureView.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TextureView.vert; sourceTree = "<group>"; };
 		BA9EC517210B02AB00A82A9B /* TantolundenCube.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = TantolundenCube.dds; sourceTree = "<group>"; };
+		BAC44A1C210CDFDD00A78EFC /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
 		BACC51E4210B0FDE003B38C6 /* mian.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mian.cpp; path = Souce/cnWenli/mian.cpp; sourceTree = "<group>"; };
 		BACC51E6210B105F003B38C6 /* cnWenli.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cnWenli.vert; sourceTree = "<group>"; };
 		BACC51E8210B106C003B38C6 /* cnWenli.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cnWenli.frag; sourceTree = "<group>"; };
 		BACC51EA210B1422003B38C6 /* img_cheryl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_cheryl.jpg; sourceTree = "<group>"; };
-		BAFB5DD0210B0C9100E8E01E /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOIL.h; path = "../../../../../../Downloads/Simple OpenGL Image Library/src/SOIL.h"; sourceTree = "<group>"; };
 		BAFB5DD1210B0C9100E8E01E /* stbi_DDS_aug_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug_c.h; sourceTree = "<group>"; };
 		BAFB5DD2210B0C9100E8E01E /* stbi_DDS_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug.h; sourceTree = "<group>"; };
 		BAFB5DD3210B0C9100E8E01E /* stb_image_aug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_aug.c; sourceTree = "<group>"; };
@@ -204,12 +204,12 @@
 		BAFB5DCE210B0C6C00E8E01E /* soil */ = {
 			isa = PBXGroup;
 			children = (
+				BAC44A1C210CDFDD00A78EFC /* SOIL.h */,
 				BAFB5DDB210B0CC500E8E01E /* image_DXT.c */,
 				BAFB5DDC210B0CC500E8E01E /* image_DXT.h */,
 				BAFB5DDA210B0CC500E8E01E /* image_helper.c */,
 				BAFB5DD9210B0CC500E8E01E /* image_helper.h */,
 				BAFB5DD4210B0C9100E8E01E /* SOIL.c */,
-				BAFB5DD0210B0C9100E8E01E /* SOIL.h */,
 				BAFB5DD3210B0C9100E8E01E /* stb_image_aug.c */,
 				BAFB5DD5210B0C9100E8E01E /* stb_image_aug.h */,
 				BAFB5DD1210B0C9100E8E01E /* stbi_DDS_aug_c.h */,
