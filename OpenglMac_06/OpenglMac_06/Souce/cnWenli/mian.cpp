@@ -129,13 +129,17 @@ void Display()
     // Bind Textures using texture units
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture1);
-    GLuint t = glGetAttribLocation(Program, "TexCoord");
+    GLuint t =glGetUniformLocation(Program, "mixInValue") ;
     glUniform1i(0, 0);
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, texture2);
     glUniform1i(0, 1);
+
     //glUniform1i(2, mixValue);
 
+
+    glUniform1i(2, mixValue);
+ glUniform1f(glGetUniformLocation(Program, "mixInValue"), mixValue);
     // Draw container
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
@@ -149,7 +153,7 @@ void Display()
     
 }
 
-void (keyboard)(unsigned char key, int x, int y){
+void keyboard(unsigned char key, int x, int y){
     if (key == GLUT_ENTERED){
         exit(0);
     }
@@ -189,9 +193,9 @@ int main(int argc, char*argv[])
     }
     
     Init();
-    
+    glutKeyboardFunc(&keyboard);
+
     glutDisplayFunc(Display);
-    glutKeyboardFunc(keyboard);
 
     glutMainLoop();
     

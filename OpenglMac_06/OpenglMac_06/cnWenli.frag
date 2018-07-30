@@ -3,7 +3,7 @@ in vec3 ourColor;
 in vec2 TexCoord;
 
 out vec4 color;
-uniform float mixValue;
+uniform float mixInValue;
 // Texture samplers
 uniform sampler2D ourTexture1;
 uniform sampler2D ourTexture2;
