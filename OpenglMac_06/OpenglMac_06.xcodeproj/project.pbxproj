@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA034BDE211068AB00B9500C /* scene.vertex in Resources */ = {isa = PBXBuildFile; fileRef = BA034BDA211068AB00B9500C /* scene.vertex */; };
+		BA034BDF211068AB00B9500C /* skybox.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA034BDB211068AB00B9500C /* skybox.frag */; };
+		BA034BE0211068AB00B9500C /* scene.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA034BDC211068AB00B9500C /* scene.frag */; };
+		BA034BE1211068AB00B9500C /* skybox.vertex in Resources */ = {isa = PBXBuildFile; fileRef = BA034BDD211068AB00B9500C /* skybox.vertex */; };
+		BA034BE32110731600B9500C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA034BE22110731600B9500C /* Cocoa.framework */; };
+		BA034BE52110732600B9500C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA034BE42110732600B9500C /* IOKit.framework */; };
+		BA034BE72110733400B9500C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA034BE62110733400B9500C /* CoreVideo.framework */; };
+		BA034BEF211074BA00B9500C /* urbansp_bk.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA034BE8211074BA00B9500C /* urbansp_bk.tga */; };
+		BA034BF0211074BA00B9500C /* urbansp_dn.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA034BE9211074BA00B9500C /* urbansp_dn.tga */; };
+		BA034BF1211074BA00B9500C /* urbansp_lf.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA034BEA211074BA00B9500C /* urbansp_lf.tga */; };
+		BA034BF2211074BA00B9500C /* urbansp_rt.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA034BEB211074BA00B9500C /* urbansp_rt.tga */; };
+		BA034BF3211074BA00B9500C /* urbansp_ft.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA034BEC211074BA00B9500C /* urbansp_ft.tga */; };
+		BA034BF4211074BA00B9500C /* urbansp_up.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA034BED211074BA00B9500C /* urbansp_up.tga */; };
+		BA034BF5211074BA00B9500C /* urbansp_up1.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA034BEE211074BA00B9500C /* urbansp_up1.tga */; };
+		BA034BF7211076CF00B9500C /* container.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA034BF6211076CE00B9500C /* container.jpg */; };
 		BA10DE992109B64B004D63BF /* setData.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA10DE982109B64B004D63BF /* setData.frag */; };
 		BA692DCD2109CA0E00704DF8 /* test.dds in Resources */ = {isa = PBXBuildFile; fileRef = BA692DCC2109CA0E00704DF8 /* test.dds */; };
 		BA6D7D5021081FDE0050201C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7D4F21081FDE0050201C /* Assets.xcassets */; };
@@ -27,7 +42,6 @@
 		BA6D7E202109602F0050201C /* setData.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA6D7E1E2109602F0050201C /* setData.vert */; };
 		BA9A2643210F795400BBE973 /* mian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA9A2642210F795400BBE973 /* mian.cpp */; };
 		BA9A2645210F7FB200BBE973 /* unit_cube.vbm in Resources */ = {isa = PBXBuildFile; fileRef = BA9A2644210F7FB200BBE973 /* unit_cube.vbm */; };
-		BA9A2647210F7FC500BBE973 /* TantolundenCube.dds in Resources */ = {isa = PBXBuildFile; fileRef = BA9A2646210F7FC500BBE973 /* TantolundenCube.dds */; };
 		BA9EC515210AFE7200A82A9B /* TextureView.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA9EC513210AFE7100A82A9B /* TextureView.frag */; };
 		BA9EC516210AFE7200A82A9B /* TextureView.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA9EC514210AFE7200A82A9B /* TextureView.vert */; };
 		BA9EC518210B02AB00A82A9B /* TantolundenCube.dds in Resources */ = {isa = PBXBuildFile; fileRef = BA9EC517210B02AB00A82A9B /* TantolundenCube.dds */; };
@@ -41,6 +55,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA034BD7211066F200B9500C /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camera.h; path = "天空盒/个项目文件/camera.h"; sourceTree = "<group>"; };
+		BA034BD8211066F200B9500C /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = texture.h; path = "天空盒/个项目文件/texture.h"; sourceTree = "<group>"; };
+		BA034BD92110689D00B9500C /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shader.h; path = "天空盒/个项目文件/shader.h"; sourceTree = "<group>"; };
+		BA034BDA211068AB00B9500C /* scene.vertex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = scene.vertex; path = "天空盒/个项目文件/scene.vertex"; sourceTree = "<group>"; };
+		BA034BDB211068AB00B9500C /* skybox.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = skybox.frag; path = "天空盒/个项目文件/skybox.frag"; sourceTree = "<group>"; };
+		BA034BDC211068AB00B9500C /* scene.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = scene.frag; path = "天空盒/个项目文件/scene.frag"; sourceTree = "<group>"; };
+		BA034BDD211068AB00B9500C /* skybox.vertex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = skybox.vertex; path = "天空盒/个项目文件/skybox.vertex"; sourceTree = "<group>"; };
+		BA034BE22110731600B9500C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BA034BE42110732600B9500C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		BA034BE62110733400B9500C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		BA034BE8211074BA00B9500C /* urbansp_bk.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = urbansp_bk.tga; sourceTree = "<group>"; };
+		BA034BE9211074BA00B9500C /* urbansp_dn.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = urbansp_dn.tga; sourceTree = "<group>"; };
+		BA034BEA211074BA00B9500C /* urbansp_lf.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = urbansp_lf.tga; sourceTree = "<group>"; };
+		BA034BEB211074BA00B9500C /* urbansp_rt.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = urbansp_rt.tga; sourceTree = "<group>"; };
+		BA034BEC211074BA00B9500C /* urbansp_ft.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = urbansp_ft.tga; sourceTree = "<group>"; };
+		BA034BED211074BA00B9500C /* urbansp_up.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = urbansp_up.tga; sourceTree = "<group>"; };
+		BA034BEE211074BA00B9500C /* urbansp_up1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = urbansp_up1.tga; sourceTree = "<group>"; };
+		BA034BF6211076CE00B9500C /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
 		BA10DE982109B64B004D63BF /* setData.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = setData.frag; sourceTree = "<group>"; };
 		BA692DCC2109CA0E00704DF8 /* test.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.dds; sourceTree = "<group>"; };
 		BA6D7D4921081FDD0050201C /* OpenglMac_06.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenglMac_06.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +112,6 @@
 		BA6D7E1E2109602F0050201C /* setData.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = setData.vert; sourceTree = "<group>"; };
 		BA9A2642210F795400BBE973 /* mian.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mian.cpp; path = "天空盒/mian.cpp"; sourceTree = "<group>"; };
 		BA9A2644210F7FB200BBE973 /* unit_cube.vbm */ = {isa = PBXFileReference; lastKnownFileType = file; path = unit_cube.vbm; sourceTree = "<group>"; };
-		BA9A2646210F7FC500BBE973 /* TantolundenCube.dds */ = {isa = PBXFileReference; lastKnownFileType = file; name = TantolundenCube.dds; path = "../../../../OpenGL/OpenGL编程指南/media/TantolundenCube.dds"; sourceTree = "<group>"; };
 		BA9EC513210AFE7100A82A9B /* TextureView.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TextureView.frag; sourceTree = "<group>"; };
 		BA9EC514210AFE7200A82A9B /* TextureView.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TextureView.vert; sourceTree = "<group>"; };
 		BA9EC517210B02AB00A82A9B /* TantolundenCube.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = TantolundenCube.dds; sourceTree = "<group>"; };
@@ -104,6 +135,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA034BE72110733400B9500C /* CoreVideo.framework in Frameworks */,
+				BA034BE52110732600B9500C /* IOKit.framework in Frameworks */,
+				BA034BE32110731600B9500C /* Cocoa.framework in Frameworks */,
 				BA6D7E0F2108210E0050201C /* libglfw.3.2.dylib in Frameworks */,
 				BA6D7E0D210820FC0050201C /* libGLEW.2.1.0.dylib in Frameworks */,
 				BA6D7E0B210820DC0050201C /* GLUT.framework in Frameworks */,
@@ -134,6 +168,9 @@
 		BA6D7D4B21081FDD0050201C /* OpenglMac_06 */ = {
 			isa = PBXGroup;
 			children = (
+				BA034BD92110689D00B9500C /* shader.h */,
+				BA034BD7211066F200B9500C /* camera.h */,
+				BA034BD8211066F200B9500C /* texture.h */,
 				BAFB5DCE210B0C6C00E8E01E /* soil */,
 				BA6D7E1521085D350050201C /* wood.png */,
 				BACC51EA210B1422003B38C6 /* img_cheryl.jpg */,
@@ -154,7 +191,18 @@
 				BACC51E6210B105F003B38C6 /* cnWenli.vert */,
 				BACC51E8210B106C003B38C6 /* cnWenli.frag */,
 				BA9A2644210F7FB200BBE973 /* unit_cube.vbm */,
-				BA9A2646210F7FC500BBE973 /* TantolundenCube.dds */,
+				BA034BDC211068AB00B9500C /* scene.frag */,
+				BA034BDA211068AB00B9500C /* scene.vertex */,
+				BA034BDB211068AB00B9500C /* skybox.frag */,
+				BA034BDD211068AB00B9500C /* skybox.vertex */,
+				BA034BE8211074BA00B9500C /* urbansp_bk.tga */,
+				BA034BE9211074BA00B9500C /* urbansp_dn.tga */,
+				BA034BEC211074BA00B9500C /* urbansp_ft.tga */,
+				BA034BEA211074BA00B9500C /* urbansp_lf.tga */,
+				BA034BEB211074BA00B9500C /* urbansp_rt.tga */,
+				BA034BED211074BA00B9500C /* urbansp_up.tga */,
+				BA034BEE211074BA00B9500C /* urbansp_up1.tga */,
+				BA034BF6211076CE00B9500C /* container.jpg */,
 			);
 			path = OpenglMac_06;
 			sourceTree = "<group>";
@@ -199,6 +247,9 @@
 		BA6D7E07210820D50050201C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA034BE62110733400B9500C /* CoreVideo.framework */,
+				BA034BE42110732600B9500C /* IOKit.framework */,
+				BA034BE22110731600B9500C /* Cocoa.framework */,
 				BA6D7E0E2108210E0050201C /* libglfw.3.2.dylib */,
 				BA6D7E0C210820FC0050201C /* libGLEW.2.1.0.dylib */,
 				BA6D7E0A210820DC0050201C /* GLUT.framework */,
@@ -281,19 +332,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA034BF5211074BA00B9500C /* urbansp_up1.tga in Resources */,
+				BA034BDE211068AB00B9500C /* scene.vertex in Resources */,
 				BA6D7E1621085D350050201C /* wood.png in Resources */,
+				BA034BF3211074BA00B9500C /* urbansp_ft.tga in Resources */,
 				BA6D7E202109602F0050201C /* setData.vert in Resources */,
+				BA034BF7211076CF00B9500C /* container.jpg in Resources */,
 				BA9A2645210F7FB200BBE973 /* unit_cube.vbm in Resources */,
+				BA034BF0211074BA00B9500C /* urbansp_dn.tga in Resources */,
 				BA9EC515210AFE7200A82A9B /* TextureView.frag in Resources */,
+				BA034BF2211074BA00B9500C /* urbansp_rt.tga in Resources */,
+				BA034BEF211074BA00B9500C /* urbansp_bk.tga in Resources */,
 				BA9EC516210AFE7200A82A9B /* TextureView.vert in Resources */,
 				BA10DE992109B64B004D63BF /* setData.frag in Resources */,
+				BA034BE1211068AB00B9500C /* skybox.vertex in Resources */,
 				BACC51EB210B1422003B38C6 /* img_cheryl.jpg in Resources */,
 				BA6D7E1A210875710050201C /* qipan.frag in Resources */,
+				BA034BDF211068AB00B9500C /* skybox.frag in Resources */,
+				BA034BF4211074BA00B9500C /* urbansp_up.tga in Resources */,
 				BACC51E9210B106C003B38C6 /* cnWenli.frag in Resources */,
 				BA6D7E182108755E0050201C /* qipan.vert in Resources */,
 				BA9EC518210B02AB00A82A9B /* TantolundenCube.dds in Resources */,
+				BA034BF1211074BA00B9500C /* urbansp_lf.tga in Resources */,
 				BA6D7D5021081FDE0050201C /* Assets.xcassets in Resources */,
-				BA9A2647210F7FC500BBE973 /* TantolundenCube.dds in Resources */,
+				BA034BE0211068AB00B9500C /* scene.frag in Resources */,
 				BA692DCD2109CA0E00704DF8 /* test.dds in Resources */,
 				BACC51E7210B105F003B38C6 /* cnWenli.vert in Resources */,
 			);
@@ -444,6 +506,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(glew_header)",
 					"$(glfw_header)",
+					/usr/local/Cellar/glm/0.9.9.0/include,
 				);
 				INFOPLIST_FILE = OpenglMac_06/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,6 +538,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(glew_header)",
 					"$(glfw_header)",
+					/usr/local/Cellar/glm/0.9.9.0/include,
 				);
 				INFOPLIST_FILE = OpenglMac_06/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
