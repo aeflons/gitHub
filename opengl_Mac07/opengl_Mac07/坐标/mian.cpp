@@ -20,20 +20,21 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include <unistd.h>
 GLuint Progrom;
 GLuint vao,vbo,ebo;
 GLuint texture1,texture2;
-glm::vec3 cubePositions[] = {
-    glm::vec3( 0.0f,  0.0f,  0.0f),
-    glm::vec3( 2.0f,  5.0f, -15.0f),
-    glm::vec3(-1.5f, -2.2f, -2.5f),
-    glm::vec3(-3.8f, -2.0f, -12.3f),
-    glm::vec3( 2.4f, -0.4f, -3.5f),
-    glm::vec3(-1.7f,  3.0f, -7.5f),
-    glm::vec3( 1.3f, -2.0f, -2.5f),
-    glm::vec3( 1.5f,  2.0f, -2.5f),
-    glm::vec3( 1.5f,  0.2f, -1.5f),
-    glm::vec3(-1.3f,  1.0f, -1.5f)
+vmath::vec3 cubePositions[] = {
+    vmath::vec3( 0.0f,  0.0f,  0.0f),
+    vmath::vec3( 2.0f,  5.0f, -15.0f),
+    vmath::vec3(-1.5f, -2.2f, -2.5f),
+    vmath::vec3(-3.8f, -2.0f, -12.3f),
+    vmath::vec3( 2.4f, -0.4f, -3.5f),
+    vmath::vec3(-1.7f,  3.0f, -7.5f),
+    vmath::vec3( 1.3f, -2.0f, -2.5f),
+    vmath::vec3( 1.5f,  2.0f, -2.5f),
+    vmath::vec3( 1.5f,  0.2f, -1.5f),
+    vmath::vec3(-1.3f,  1.0f, -1.5f)
 };
 void Init(){
     ShaderInfo shaders[] = { {GL_VERTEX_SHADER,"cube3D.vert" },{GL_FRAGMENT_SHADER,"cube3D.frag"},{GL_NONE, NULL}};
@@ -141,36 +142,41 @@ void Display(){
     glUniform1i(glGetUniformLocation(Progrom,"OurTextture2"), 1);
         glBindVertexArray(vao);
 
-    glm::mat4 view;
-    glm::mat4 projection;
-    view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
-    projection = glm::perspective(45.0f, 1.0f, 0.1f, 100.0f);
-    GLfloat time = glfwGetTime();
+//    glm::mat4 view;
+//    glm::mat4 projection;
+//    view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+//    projection = glm::perspective(45.0f, 1.0f, 0.1f, 100.0f);
+//    GLfloat time = glfwGetTime();
+    vmath::mat4 view = vmath::mat4::identity();
+    vmath::mat4 projection = vmath::mat4::identity();
+
 //
 //    GLint modelLoc = glGetUniformLocation(Progrom ,"model");
     GLint viewLoc = glGetUniformLocation(Progrom, "view");
     GLint projLoc = glGetUniformLocation(Progrom, "projection");
-    glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-    glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+    GLint modelLoc = glGetUniformLocation(Progrom, "model");
+    glUniformMatrix4fv(viewLoc, 1, GL_FALSE, view);
+    glUniformMatrix4fv(projLoc, 1, GL_FALSE, projection);
 //
-//    for (GLuint i = 0; i < 10; i++)
-//    {
-//        // Calculate the model matrix for each object and pass it to shader before drawing
-//        glm::mat4 model;
-//        model = glm::translate(model, cubePositions[i]);
-//        GLfloat angle = 20.0f * i;
-//        model = glm::rotate(model, angle, glm::vec3(1.0f, 0.3f, 0.5f));
-//        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-//
-//        glDrawArrays(GL_TRIANGLES, 0, 36);
-//    }
-    glDrawArrays(GL_TRIANGLES, 0, 36);
+
+        // Calculate the model matrix for each object and pass it to shader before drawing
+        GLfloat angle = 20.0f * 2;
+       GLfloat time = glfwGetTime();
+        vmath::mat4 model = vmath::mat4::identity();
+        vmath::vec3 rotate = cubePositions[2];
+        model =  vmath::rotate(5 * sinf(time), rotate[0], rotate[1], rotate[2]) * model;
+       // model = glm::rotate(model, angle, glm::vec3(1.0f, 0.3f, 0.5f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, model);
+
+        glDrawArrays(GL_TRIANGLES, 0, 36);
+
 
     glBindVertexArray(0);
     
     // Swap the screen buffers
     glutSwapBuffers();
     glutPostRedisplay();
+    //sleep(30);
     
 }
 

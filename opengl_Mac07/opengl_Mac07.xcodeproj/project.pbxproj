@@ -425,8 +425,8 @@
 				DEVELOPMENT_TEAM = NLRV94SV3R;
 				HEADER_SEARCH_PATHS = (
 					"$(glfw_header)",
-					"$(glm_header)",
 					"$(glew_header)",
+					"$(glm_header)",
 				);
 				INFOPLIST_FILE = opengl_Mac07/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,8 +453,8 @@
 				DEVELOPMENT_TEAM = NLRV94SV3R;
 				HEADER_SEARCH_PATHS = (
 					"$(glfw_header)",
-					"$(glm_header)",
 					"$(glew_header)",
+					"$(glm_header)",
 				);
 				INFOPLIST_FILE = opengl_Mac07/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
