@@ -183,12 +183,12 @@ void Display(){
 int main(int argc, char *argv[]){
     glfwInit();
     glutInit(&argc, (char**)argv);
-    glutInitDisplayMode(GLUT_3_2_CORE_PROFILE | GLUT_RGBA  );
+    glutInitDisplayMode(GLUT_3_2_CORE_PROFILE | GLUT_RGBA | GLUT_DOUBLE | GLUT_MULTISAMPLE | GLUT_STENCIL  );
     glutInitWindowSize(512, 512);
     glutCreateWindow(argv[0]);
     glewExperimental = GL_TRUE;
     GLenum err = glewInit();
-       glEnable(GL_DEPTH_TEST);
+    glEnable(GL_DEPTH_TEST);
     if (GLEW_OK != err) {
         fprintf(stderr, "Error: %s\n", glewGetErrorString(err));
     }
