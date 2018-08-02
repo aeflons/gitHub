@@ -36,6 +36,9 @@ vmath::vec3 cubePositions[] = {
     vmath::vec3( 1.5f,  0.2f, -1.5f),
     vmath::vec3(-1.3f,  1.0f, -1.5f)
 };
+vmath::vec3 cameraPos   = vmath::vec3(1.0f, 0.0f,  3.0f);
+vmath::vec3 cameraFront = vmath::vec3(0.0f, 0.0f, -1.0f);
+vmath::vec3 cameraUp    = vmath::vec3(0.0f, 1.0f,  0.0f);
 void Init(){
     ShaderInfo shaders[] = { {GL_VERTEX_SHADER,"cube3D.vert" },{GL_FRAGMENT_SHADER,"cube3D.frag"},{GL_NONE, NULL}};
     Progrom = LoadShaders(shaders);
@@ -155,20 +158,32 @@ void Display(){
     GLint viewLoc = glGetUniformLocation(Progrom, "view");
     GLint projLoc = glGetUniformLocation(Progrom, "projection");
     GLint modelLoc = glGetUniformLocation(Progrom, "model");
+    GLfloat radius = 10.0f;
+    GLfloat camX = sin(glfwGetTime()) * radius;
+    GLfloat camZ = cos(glfwGetTime()) * radius;
+    GLfloat camy = sin(glfwGetTime() + 2) * radius;
+    //view = vmath::lookat(vmath::vec3(camX, 0.0f, camZ), vmath::vec3(0.0f, 0.0f, 0.0f), vmath::vec3(0.0f, 1.0f, 0.0f));
+    view = vmath::lookat(cameraPos, cameraPos + cameraFront, cameraUp);
+    projection = vmath::perspective(45.0f, 1.0, 0.1f, 100.0f);
+
     glUniformMatrix4fv(viewLoc, 1, GL_FALSE, view);
     glUniformMatrix4fv(projLoc, 1, GL_FALSE, projection);
 //
 
         // Calculate the model matrix for each object and pass it to shader before drawing
-        GLfloat angle = 20.0f * 2;
+    for (int i = 0; i < 10; i++) {
+        
+        GLfloat angle = 20.0f * i;
        GLfloat time = glfwGetTime();
         vmath::mat4 model = vmath::mat4::identity();
-        vmath::vec3 rotate = cubePositions[2];
-        model =  vmath::rotate(5 * sinf(time), rotate[0], rotate[1], rotate[2]) * model;
+        vmath::vec3 rotate = cubePositions[i];
+        model = vmath::translate(rotate[0], rotate[1], rotate[2]);
+        model =  vmath::rotate(angle, 1.0f ,0.3f ,0.5f) * model;
        // model = glm::rotate(model, angle, glm::vec3(1.0f, 0.3f, 0.5f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, model);
 
         glDrawArrays(GL_TRIANGLES, 0, 36);
+    }
 
 
     glBindVertexArray(0);
@@ -179,7 +194,39 @@ void Display(){
     //sleep(30);
     
 }
+void keyboardFunc(unsigned char key, int x, int y){
+    
+}
+void specialKeyBoardFunc(int key, int x, int y){
+    GLfloat cameraSpeed = 1.0f;
+    switch (key) {
+        case GLUT_KEY_UP:
+        {
+            cameraPos += cameraSpeed * cameraFront;
 
+        }
+            break;
+        case GLUT_KEY_DOWN:
+        {
+            cameraPos -= cameraSpeed * cameraFront;
+
+        }
+            break;
+        case GLUT_KEY_RIGHT:
+        {
+            cameraPos -= vmath::normalize(vmath::cross(cameraFront, cameraUp)) * cameraSpeed;
+
+        }
+            break;
+        case GLUT_KEY_LEFT:
+        {
+             cameraPos += vmath::normalize(vmath::cross(cameraFront, cameraUp)) * cameraSpeed;
+        }
+            break;
+        default:
+            break;
+    }
+}
 int main(int argc, char *argv[]){
     glfwInit();
     glutInit(&argc, (char**)argv);
@@ -189,6 +236,8 @@ int main(int argc, char *argv[]){
     glewExperimental = GL_TRUE;
     GLenum err = glewInit();
     glEnable(GL_DEPTH_TEST);
+    glutKeyboardFunc(&keyboardFunc);
+    glutSpecialFunc(specialKeyBoardFunc);
     if (GLEW_OK != err) {
         fprintf(stderr, "Error: %s\n", glewGetErrorString(err));
     }
