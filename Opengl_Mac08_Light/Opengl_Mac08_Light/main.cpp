@@ -23,69 +23,118 @@ GLuint vao,vbo;
 GLuint lightVao,lightVbo;
 GLuint program, LightPorgram;
 void Init(){
-    float vertices[] = {
-        -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
-        0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
-        0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-        0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-        -0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
-        
-        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-        0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
-        0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
-        0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
-        -0.5f,  0.5f,  0.5f,  0.0f, 1.0f,
-        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-        
-        -0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-        -0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-        -0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-        
-        0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-        0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-        0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-        0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-        0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-        0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-        
-        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-        0.5f, -0.5f, -0.5f,  1.0f, 1.0f,
-        0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
-        0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
-        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-        
-        -0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
-        0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-        0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-        0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-        -0.5f,  0.5f,  0.5f,  0.0f, 0.0f,
-        -0.5f,  0.5f, -0.5f,  0.0f, 1.0f
+    GLfloat vertices[] = {
+        -0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f, -0.5f,
+        0.5f,  0.5f, -0.5f,
+        0.5f,  0.5f, -0.5f,
+        -0.5f,  0.5f, -0.5f,
+        -0.5f, -0.5f, -0.5f,
+
+        -0.5f, -0.5f,  0.5f,
+        0.5f, -0.5f,  0.5f,
+        0.5f,  0.5f,  0.5f,
+        0.5f,  0.5f,  0.5f,
+        -0.5f,  0.5f,  0.5f,
+        -0.5f, -0.5f,  0.5f,
+
+        -0.5f,  0.5f,  0.5f,
+        -0.5f,  0.5f, -0.5f,
+        -0.5f, -0.5f, -0.5f,
+        -0.5f, -0.5f, -0.5f,
+        -0.5f, -0.5f,  0.5f,
+        -0.5f,  0.5f,  0.5f,
+
+        0.5f,  0.5f,  0.5f,
+        0.5f,  0.5f, -0.5f,
+        0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f,  0.5f,
+        0.5f,  0.5f,  0.5f,
+
+        -0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f,  0.5f,
+        0.5f, -0.5f,  0.5f,
+        -0.5f, -0.5f,  0.5f,
+        -0.5f, -0.5f, -0.5f,
+
+        -0.5f,  0.5f, -0.5f,
+        0.5f,  0.5f, -0.5f,
+        0.5f,  0.5f,  0.5f,
+        0.5f,  0.5f,  0.5f,
+        -0.5f,  0.5f,  0.5f,
+        -0.5f,  0.5f, -0.5f
     };
     ShaderInfo shaders[] = {{GL_VERTEX_SHADER, "cube.vert"},{GL_FRAGMENT_SHADER, "cube.frag"},{GL_NONE, NULL}};
      ShaderInfo shadersLight[] = {{GL_VERTEX_SHADER, "cubeLight.vert"},{GL_FRAGMENT_SHADER, "cubeLight.frag"},{GL_NONE, NULL}};
     program = LoadShaders(shaders);
     LightPorgram = LoadShaders(shadersLight);
     glUseProgram(program);
+    glUseProgram(LightPorgram);
     glGenVertexArrays(1, &vao);
     glBindVertexArray(vao);
     
     glGenBuffers(1,&vbo);
     glBindBuffer(GL_ARRAY_BUFFER,vbo);
-    glBufferData(GL_ARRAY_BUFFER,5 * sizeof(float), vertices,GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER,  sizeof(vertices), vertices,GL_STATIC_DRAW);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat),(GLvoid *)0);
     glEnableVertexAttribArray(0);
-    glGenBuffers(1,&lightVbo);
+    glBindVertexArray(0);
+
+    glGenVertexArrays(1, &lightVao);
+    glBindVertexArray(lightVao);
     glBindBuffer(GL_ARRAY_BUFFER,vbo);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat),(GLvoid *)0);
     glEnableVertexAttribArray(0);
+    glBindVertexArray(0);
+
 }
 void Display(){
-    
+    glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    GLint objectColorLoc = glGetUniformLocation(program, "objectColor");
+    GLint lightColorLoc  = glGetUniformLocation(program, "lightColor");
+    glUniform3f(objectColorLoc, 1.0f, 0.5f, 0.31f);
+    glUniform3f(lightColorLoc,  1.0f, 0.5f, 1.0f);
+
+    // Create camera transformations
+    vmath::mat4 view = vmath::mat4::identity();
+
+    vmath::mat4 projection = vmath::mat4::identity();
+    // Get the uniform locations
+    GLint modelLoc = glGetUniformLocation(program, "model");
+    GLint viewLoc  = glGetUniformLocation(program,  "view");
+    GLint projLoc  = glGetUniformLocation(program,  "projection");
+    // Pass the matrices to the shader
+    glUniformMatrix4fv(viewLoc, 1, GL_FALSE,view);
+    glUniformMatrix4fv(projLoc, 1, GL_FALSE,projection);
+
+    // Draw the container (using container's vertex attributes)
+    glBindVertexArray(vao);
+    vmath::mat4 model = vmath::mat4::identity();
+    glUniformMatrix4fv(modelLoc, 1, GL_FALSE, model);
+    glDrawArrays(GL_TRIANGLES, 0, 36);
+    glBindVertexArray(0);
+
+    // Also draw the lamp object, again binding the appropriate shader
+
+    // Get location objects for the matrices on the lamp shader (these could be different on a different shader)
+//    modelLoc = glGetUniformLocation(LightPorgram, "model");
+//    viewLoc  = glGetUniformLocation(LightPorgram, "view");
+//    projLoc  = glGetUniformLocation(LightPorgram, "projection");
+//    // Set matrices
+//    glUniformMatrix4fv(viewLoc, 1, GL_FALSE,view);
+//    glUniformMatrix4fv(projLoc, 1, GL_FALSE,projection);
+//    model = vmath::translate(0.5f, 0.5f, 0.5f) * model;
+//    model = vmath::scale(vmath::vec3(3.0f)) * model; // Make it a smaller cube
+//    glUniformMatrix4fv(modelLoc, 1, GL_FALSE, model);
+//    // Draw the light object (using light's vertex attributes)
+//    glBindVertexArray(lightVao);
+//    glDrawArrays(GL_TRIANGLES, 0, 36);
+//    glBindVertexArray(0);
+    glutSwapBuffers();
+     glutPostRedisplay();
 }
 
 int main(int argc, char *argv[]){
