@@ -17,6 +17,7 @@
 		BA034C912113031F00B9500C /* cube.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA034C902113031F00B9500C /* cube.frag */; };
 		BA034C932113033000B9500C /* cubeLight.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA034C922113033000B9500C /* cubeLight.vert */; };
 		BA034C952113033E00B9500C /* cubeLight.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA034C942113033E00B9500C /* cubeLight.frag */; };
+		BA034D802113F51500B9500C /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA034D7F2113F51500B9500C /* Camera.cpp */; };
 		BAC9385D211368E900DAF4EB /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = BAC9383C211368E900DAF4EB /* image_helper.c */; };
 		BAC9385E211368E900DAF4EB /* LoadShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAC9383D211368E900DAF4EB /* LoadShaders.cpp */; };
 		BAC9385F211368E900DAF4EB /* loadtexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAC93841211368E900DAF4EB /* loadtexture.cpp */; };
@@ -44,6 +45,7 @@
 		BA034C902113031F00B9500C /* cube.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cube.frag; sourceTree = "<group>"; };
 		BA034C922113033000B9500C /* cubeLight.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cubeLight.vert; sourceTree = "<group>"; };
 		BA034C942113033E00B9500C /* cubeLight.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cubeLight.frag; sourceTree = "<group>"; };
+		BA034D7F2113F51500B9500C /* Camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
 		BAC9383C211368E900DAF4EB /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
 		BAC9383D211368E900DAF4EB /* LoadShaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadShaders.cpp; sourceTree = "<group>"; };
 		BAC9383E211368E900DAF4EB /* stb_image_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_aug.h; sourceTree = "<group>"; };
@@ -141,39 +143,40 @@
 		BAC9383B211368E900DAF4EB /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				BAC9383C211368E900DAF4EB /* image_helper.c */,
-				BAC9383D211368E900DAF4EB /* LoadShaders.cpp */,
-				BAC9383E211368E900DAF4EB /* stb_image_aug.h */,
-				BAC9383F211368E900DAF4EB /* SOIL.h */,
-				BAC93840211368E900DAF4EB /* stbi_DDS_aug.h */,
-				BAC93841211368E900DAF4EB /* loadtexture.cpp */,
-				BAC93842211368E900DAF4EB /* vermilion.cpp */,
 				BAC93843211368E900DAF4EB /* CheckError.h */,
-				BAC93844211368E900DAF4EB /* mat.h */,
-				BAC93845211368E900DAF4EB /* image_DXT.c */,
-				BAC93846211368E900DAF4EB /* vgl.h */,
-				BAC93847211368E900DAF4EB /* vec.h */,
-				BAC93848211368E900DAF4EB /* vapp.h */,
-				BAC93849211368E900DAF4EB /* vutils.h */,
-				BAC9384A211368E900DAF4EB /* gl3w.c */,
 				BAC9384B211368E900DAF4EB /* Cube.h */,
-				BAC9384C211368E900DAF4EB /* stbi_DDS_aug_c.h */,
-				BAC9384D211368E900DAF4EB /* LoadShaders.h */,
 				BAC9384E211368E900DAF4EB /* gl3.h */,
-				BAC9384F211368E900DAF4EB /* Teapot.h */,
-				BAC93850211368E900DAF4EB /* SOIL.c */,
+				BAC9384A211368E900DAF4EB /* gl3w.c */,
+				BAC93859211368E900DAF4EB /* gl3w.h */,
+				BAC93858211368E900DAF4EB /* glcorearb.h */,
 				BAC93851211368E900DAF4EB /* glext.h */,
-				BAC93852211368E900DAF4EB /* stb_image_aug.c */,
-				BAC93853211368E900DAF4EB /* image_helper.h */,
-				BAC93854211368E900DAF4EB /* vbm.cpp */,
+				BAC93845211368E900DAF4EB /* image_DXT.c */,
 				BAC93855211368E900DAF4EB /* image_DXT.h */,
+				BAC9383C211368E900DAF4EB /* image_helper.c */,
+				BAC93853211368E900DAF4EB /* image_helper.h */,
+				BAC9383D211368E900DAF4EB /* LoadShaders.cpp */,
+				BAC9384D211368E900DAF4EB /* LoadShaders.h */,
+				BAC93841211368E900DAF4EB /* loadtexture.cpp */,
+				BAC93844211368E900DAF4EB /* mat.h */,
+				BAC93850211368E900DAF4EB /* SOIL.c */,
+				BAC9383F211368E900DAF4EB /* SOIL.h */,
+				BAC93852211368E900DAF4EB /* stb_image_aug.c */,
+				BAC9383E211368E900DAF4EB /* stb_image_aug.h */,
+				BAC9384C211368E900DAF4EB /* stbi_DDS_aug_c.h */,
+				BAC93840211368E900DAF4EB /* stbi_DDS_aug.h */,
+				BAC9385B211368E900DAF4EB /* targa.cpp */,
+				BAC9384F211368E900DAF4EB /* Teapot.h */,
+				BAC93848211368E900DAF4EB /* vapp.h */,
+				BAC93854211368E900DAF4EB /* vbm.cpp */,
 				BAC93856211368E900DAF4EB /* vbm.h */,
 				BAC93857211368E900DAF4EB /* vdds.cpp */,
-				BAC93858211368E900DAF4EB /* glcorearb.h */,
-				BAC93859211368E900DAF4EB /* gl3w.h */,
+				BAC93847211368E900DAF4EB /* vec.h */,
+				BAC93842211368E900DAF4EB /* vermilion.cpp */,
 				BAC9385A211368E900DAF4EB /* vermilion.h */,
-				BAC9385B211368E900DAF4EB /* targa.cpp */,
+				BAC93846211368E900DAF4EB /* vgl.h */,
 				BAC9385C211368E900DAF4EB /* vmath.h */,
+				BAC93849211368E900DAF4EB /* vutils.h */,
+				BA034D7F2113F51500B9500C /* Camera.cpp */,
 			);
 			name = lib;
 			path = ../../lib;
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA034D802113F51500B9500C /* Camera.cpp in Sources */,
 				BA034C842113006B00B9500C /* main.cpp in Sources */,
 				BAC9385F211368E900DAF4EB /* loadtexture.cpp in Sources */,
 				BAC93861211368E900DAF4EB /* image_DXT.c in Sources */,
