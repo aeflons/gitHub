@@ -9,7 +9,7 @@
 #include <stdio.h>
 #ifndef CAMERA_H
 #define CAMERA_H
-#include <vmath.h>
+#include "vmath.h"
 enum Camera_Movement {
     FORWARD,
     BACKWARD,
