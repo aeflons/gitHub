@@ -14,8 +14,6 @@
 		BABA2D2A2118310200C0E951 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = BABA2D0F2118310200C0E951 /* image_helper.c */; };
 		BABA2D2B2118310200C0E951 /* LoadShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BABA2D112118310200C0E951 /* LoadShaders.cpp */; };
 		BABA2D2C2118310200C0E951 /* loadtexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BABA2D132118310200C0E951 /* loadtexture.cpp */; };
-		BABA2D2D2118310200C0E951 /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = BABA2D152118310200C0E951 /* SOIL.c */; };
-		BABA2D2E2118310200C0E951 /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = BABA2D172118310200C0E951 /* stb_image_aug.c */; };
 		BABA2D2F2118310200C0E951 /* targa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BABA2D1B2118310200C0E951 /* targa.cpp */; };
 		BABA2D302118310200C0E951 /* vbm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BABA2D1E2118310200C0E951 /* vbm.cpp */; };
 		BABA2D312118310200C0E951 /* vdds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BABA2D202118310200C0E951 /* vdds.cpp */; };
@@ -29,8 +27,10 @@
 		BABA2D43211843AB00C0E951 /* materuals.frag in Resources */ = {isa = PBXBuildFile; fileRef = BABA2D42211843AB00C0E951 /* materuals.frag */; };
 		BABA2D452118440000C0E951 /* lamp.vert in Resources */ = {isa = PBXBuildFile; fileRef = BABA2D442118440000C0E951 /* lamp.vert */; };
 		BABA2D472118440900C0E951 /* lamp.frag in Resources */ = {isa = PBXBuildFile; fileRef = BABA2D462118440900C0E951 /* lamp.frag */; };
-		BABA2D4B2118517E00C0E951 /* nextMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BABA2D4A2118517E00C0E951 /* nextMain.cpp */; };
 		BABA2D4D211852A600C0E951 /* container.png in Resources */ = {isa = PBXBuildFile; fileRef = BABA2D4C211852A600C0E951 /* container.png */; };
+		BABA2D4F2119308E00C0E951 /* container_specular.png in Resources */ = {isa = PBXBuildFile; fileRef = BABA2D4E2119308E00C0E951 /* container_specular.png */; };
+		BABA2D51211930C100C0E951 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BABA2D50211930C100C0E951 /* main.cpp */; };
+		BABA2D542119377F00C0E951 /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BABA2D532119377F00C0E951 /* stb_image.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,8 +81,11 @@
 		BABA2D42211843AB00C0E951 /* materuals.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = materuals.frag; sourceTree = "<group>"; };
 		BABA2D442118440000C0E951 /* lamp.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lamp.vert; sourceTree = "<group>"; };
 		BABA2D462118440900C0E951 /* lamp.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lamp.frag; sourceTree = "<group>"; };
-		BABA2D4A2118517E00C0E951 /* nextMain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = nextMain.cpp; sourceTree = "<group>"; };
 		BABA2D4C211852A600C0E951 /* container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = container.png; sourceTree = "<group>"; };
+		BABA2D4E2119308E00C0E951 /* container_specular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = container_specular.png; sourceTree = "<group>"; };
+		BABA2D50211930C100C0E951 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "光照纹理/main.cpp"; sourceTree = "<group>"; };
+		BABA2D522119377A00C0E951 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		BABA2D532119377F00C0E951 /* stb_image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +131,9 @@
 				BABA2D42211843AB00C0E951 /* materuals.frag */,
 				BABA2D442118440000C0E951 /* lamp.vert */,
 				BABA2D462118440900C0E951 /* lamp.frag */,
-				BABA2D4A2118517E00C0E951 /* nextMain.cpp */,
 				BABA2D4C211852A600C0E951 /* container.png */,
+				BABA2D4E2119308E00C0E951 /* container_specular.png */,
+				BABA2D50211930C100C0E951 /* main.cpp */,
 			);
 			path = Opengl_Mac_Light03;
 			sourceTree = "<group>";
@@ -137,6 +141,8 @@
 		BABA2D042118310200C0E951 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				BABA2D522119377A00C0E951 /* stb_image.h */,
+				BABA2D532119377F00C0E951 /* stb_image.cpp */,
 				BABA2D052118310200C0E951 /* Camera.cpp */,
 				BABA2D062118310200C0E951 /* CheckError.h */,
 				BABA2D072118310200C0E951 /* Cube.h */,
@@ -251,6 +257,7 @@
 				BABA2D41211843A300C0E951 /* materuals.vert in Resources */,
 				BABA2D452118440000C0E951 /* lamp.vert in Resources */,
 				BABA2D43211843AB00C0E951 /* materuals.frag in Resources */,
+				BABA2D4F2119308E00C0E951 /* container_specular.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,17 +269,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BABA2D2B2118310200C0E951 /* LoadShaders.cpp in Sources */,
-				BABA2D2E2118310200C0E951 /* stb_image_aug.c in Sources */,
+				BABA2D51211930C100C0E951 /* main.cpp in Sources */,
 				BABA2D2C2118310200C0E951 /* loadtexture.cpp in Sources */,
 				BABA2D322118310200C0E951 /* vermilion.cpp in Sources */,
-				BABA2D2D2118310200C0E951 /* SOIL.c in Sources */,
 				BABA2D282118310200C0E951 /* gl3w.c in Sources */,
 				BABA2D3F2118408300C0E951 /* Camera1.cpp in Sources */,
 				BABA2D312118310200C0E951 /* vdds.cpp in Sources */,
 				BABA2D272118310200C0E951 /* Camera.cpp in Sources */,
 				BABA2D2F2118310200C0E951 /* targa.cpp in Sources */,
 				BABA2D2A2118310200C0E951 /* image_helper.c in Sources */,
-				BABA2D4B2118517E00C0E951 /* nextMain.cpp in Sources */,
+				BABA2D542119377F00C0E951 /* stb_image.cpp in Sources */,
 				BABA2D302118310200C0E951 /* vbm.cpp in Sources */,
 				BABA2D292118310200C0E951 /* image_DXT.c in Sources */,
 			);
