@@ -1,18 +1,9 @@
-//
-//  Camera1.cpp
-//  Opengl_Mac_Light03
-//
-//  Created by yujunzhen on 2018/8/6.
-//  Copyright © 2018年 yujunzhen. All rights reserved.
-//
-
 #ifndef CAMERA_H
 #define CAMERA_H
 
-
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-#include <OpenGL/gl.h>
+
 #include <vector>
 
 // Defines several possible options for camera movement. Used as abstraction to stay away from window-system specific input methods
@@ -48,7 +39,7 @@ public:
     float MovementSpeed;
     float MouseSensitivity;
     float Zoom;
-    
+
     // Constructor with vectors
     Camera(glm::vec3 position = glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f), float yaw = YAW, float pitch = PITCH) : Front(glm::vec3(0.0f, 0.0f, -1.0f)), MovementSpeed(SPEED), MouseSensitivity(SENSITIVITY), Zoom(ZOOM)
     {
@@ -67,13 +58,13 @@ public:
         Pitch = pitch;
         updateCameraVectors();
     }
-    
+
     // Returns the view matrix calculated using Euler Angles and the LookAt Matrix
     glm::mat4 GetViewMatrix()
     {
         return glm::lookAt(Position, Position + Front, Up);
     }
-    
+
     // Processes input received from any keyboard-like input system. Accepts input parameter in the form of camera defined ENUM (to abstract it from windowing systems)
     void ProcessKeyboard(Camera_Movement direction, float deltaTime)
     {
@@ -87,16 +78,16 @@ public:
         if (direction == RIGHT)
             Position += Right * velocity;
     }
-    
+
     // Processes input received from a mouse input system. Expects the offset value in both the x and y direction.
     void ProcessMouseMovement(float xoffset, float yoffset, GLboolean constrainPitch = true)
     {
         xoffset *= MouseSensitivity;
         yoffset *= MouseSensitivity;
-        
+
         Yaw   += xoffset;
         Pitch += yoffset;
-        
+
         // Make sure that when pitch is out of bounds, screen doesn't get flipped
         if (constrainPitch)
         {
@@ -105,11 +96,11 @@ public:
             if (Pitch < -89.0f)
                 Pitch = -89.0f;
         }
-        
+
         // Update Front, Right and Up Vectors using the updated Euler angles
         updateCameraVectors();
     }
-    
+
     // Processes input received from a mouse scroll-wheel event. Only requires input on the vertical wheel-axis
     void ProcessMouseScroll(float yoffset)
     {
@@ -120,7 +111,7 @@ public:
         if (Zoom >= 45.0f)
             Zoom = 45.0f;
     }
-    
+
 private:
     // Calculates the front vector from the Camera's (updated) Euler Angles
     void updateCameraVectors()

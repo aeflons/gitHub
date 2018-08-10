@@ -240,13 +240,13 @@ void Display(){
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, textureMap1);
     glBindVertexArray(vao);
-    vmath::mat4 model = vmath::mat4::identity();
     for(unsigned int i = 0; i < 10; i++)
     {
-        
+        vmath::mat4 model = vmath::mat4::identity();
+
         model *= vmath::translate(cubePositions[i]);
         float angle = 20.0f * i;
-        model *= vmath::rotate(vmath::radians(angle), vmath::vec3(1.0f, 0.3f, 0.5f));
+        model *= vmath::rotate(vmath::radians(angle), vmath::vec3(2.0f, 0.0f, 0.5f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, model);
         
         glDrawArrays(GL_TRIANGLES, 0, 36);
