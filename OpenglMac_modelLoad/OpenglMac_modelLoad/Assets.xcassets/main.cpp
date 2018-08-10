@@ -39,7 +39,7 @@ float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 GLfloat vertices[] = {
     // Positions
-    -0.5f, -0.5f, -0.5f,
+    -1.5f, -0.5f, -0.5f,
     -0.5f, 0.5f, -0.5f,
     0.5f, -0.5f, -0.5f,
 };
@@ -72,7 +72,7 @@ static  Model ourModel(FileSystem::getPath("nanosuit.obj"));
     
     // render
     // ------
-    glClearColor(0.05f, 0.05f, 0.05f, 1.0f);
+    glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     // don't forget to enable shader before setting uniforms
@@ -89,7 +89,7 @@ static  Model ourModel(FileSystem::getPath("nanosuit.obj"));
     // translate it down so it's at the center of the scene
     //model *= vmath::scale(0.2f, 0.2f, 0.2f);    // it's a bit too big for our scene, so scale it down
     ourShader.setMat4("model", model);
-    ourModel.Draw(ourShader);
+    //ourModel.Draw(ourShader);
 //    glBindVertexArray(vao);
 //    glDrawArrays(GL_TRIANGLES, 0, 3);
 
@@ -110,7 +110,7 @@ void SpacialKeyBoardFunc(int key, int width, int height){
 int main(int argc, char *argv[]){
     glfwInit();
     glutInit(&argc, (char**)argv);
-    glutInitDisplayMode(GLUT_3_2_CORE_PROFILE | GLUT_RGBA   );
+    glutInitDisplayMode(GLUT_3_2_CORE_PROFILE | GLUT_RGBA  | GLUT_DOUBLE | GLUT_MULTISAMPLE | GLUT_STENCIL );
     glutInitWindowSize(SCR_WIDTH, SCR_HEIGHT);
     glutCreateWindow(argv[0]);
     glewExperimental = GL_TRUE;

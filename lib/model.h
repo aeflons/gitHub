@@ -46,6 +46,15 @@ public:
     }
     
 private:
+    
+    float lessThanOne(float f){
+        
+        if (fabsf(f) > 1 ) {
+            f = f / 10.0;
+            f = lessThanOne(f);
+        }
+        return f;
+    };
     /*  Functions   */
     // loads a model with supported ASSIMP extensions from file and stores the resulting meshes in the meshes vector.
     void loadModel(string const &path)
@@ -98,9 +107,9 @@ private:
             Vertex vertex;
             vmath::vec3 vector; // we declare a placeholder vector since assimp uses its own vector class that doesn't directly convert to glm's vec3 class so we transfer the data to this placeholder vmath::vec3 first.
             // positions
-            vector[0] = min(mesh->mVertices[i].x,0.99f);
-            vector[1] = min(mesh->mVertices[i].y, 0.99f);
-            vector[2] = min(mesh->mVertices[i].z,0.99f);
+            vector[0] =lessThanOne(mesh->mVertices[i].x);
+            vector[1] = lessThanOne(mesh->mVertices[i].y);
+            vector[2] = lessThanOne(mesh->mVertices[i].z);
             vertex.Position = vector;
             // normals
             vector[0] = mesh->mNormals[i].x;

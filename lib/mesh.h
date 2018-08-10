@@ -51,18 +51,18 @@ public:
         this->vertices = vertices;
         this->indices = indices;
         this->textures = textures;
-        for(unsigned int i = 0; i <  this->vertices.size(); i++){
-         
-            if ((i + 1) % 3 == 1) {
-                 this->vertices[i].Position = vmath::vec3(-0.5f, -0.5f, -0.5f);
-            }
-            if ((i + 1) % 3 == 2) {
-               this->vertices[i].Position = vmath::vec3(0.5f, -0.5f, -0.5f);
-            }
-            if ((i + 1) % 3 == 0) {
-            this->vertices[i].Position = vmath::vec3(-0.5f, 0.5f, -0.5f);
-            }
-        }
+//        for(unsigned int i = 0; i <  this->vertices.size(); i++){
+//
+//            if ((i + 1) % 3 == 1) {
+//                 this->vertices[i].Position = vmath::vec3(-0.5f, -0.5f, -0.5f);
+//            }
+//            if ((i + 1) % 3 == 2) {
+//               this->vertices[i].Position = vmath::vec3(0.5f, -0.5f, -0.5f);
+//            }
+//            if ((i + 1) % 3 == 0) {
+//            this->vertices[i].Position = vmath::vec3(-0.5f, 0.5f, -0.5f);
+//            }
+//        }
         // now that we have all the required data, set the vertex buffers and its attribute pointers.
         setupMesh();
     }
@@ -98,10 +98,10 @@ public:
         
         // draw mesh
         glBindVertexArray(VAO);
-        //glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0);
+        glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, &indices);
 
         //glBindVertexArray(VCO);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        //glDrawArrays(GL_TRIANGLES, 0, 156);
         glBindVertexArray(0);
 
         // always good practice to set everything back to defaults once configured.
@@ -140,20 +140,20 @@ private:
         glEnableVertexAttribArray(0);
 
         // vertex normals
-//        glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, Normal));
-//        glEnableVertexAttribArray(1);
-//
-//        // vertex texture coords
-//        glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, TexCoords));
-//        glEnableVertexAttribArray(2);
-//
-//        // vertex tangent
-//        glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, Tangent));
-//        glEnableVertexAttribArray(3);
-//
-//        // vertex bitangent
-//        glVertexAttribPointer(4, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, Bitangent));
-//        glEnableVertexAttribArray(4);
+        glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, Normal));
+        glEnableVertexAttribArray(1);
+
+        // vertex texture coords
+        glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, TexCoords));
+        glEnableVertexAttribArray(2);
+
+        // vertex tangent
+        glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, Tangent));
+        glEnableVertexAttribArray(3);
+
+        // vertex bitangent
+        glVertexAttribPointer(4, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, Bitangent));
+        glEnableVertexAttribArray(4);
 
         glBindVertexArray(0);
         
