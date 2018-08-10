@@ -107,9 +107,9 @@ private:
             Vertex vertex;
             vmath::vec3 vector; // we declare a placeholder vector since assimp uses its own vector class that doesn't directly convert to glm's vec3 class so we transfer the data to this placeholder vmath::vec3 first.
             // positions
-            vector[0] =lessThanOne(mesh->mVertices[i].x);
-            vector[1] = lessThanOne(mesh->mVertices[i].y);
-            vector[2] = lessThanOne(mesh->mVertices[i].z);
+            vector[0] = mesh->mVertices[i].x / 10.0;
+            vector[1] = mesh->mVertices[i].y / 10.0 - 0.8;
+            vector[2] = mesh->mVertices[i].z / 10.0;
             vertex.Position = vector;
             // normals
             vector[0] = mesh->mNormals[i].x;

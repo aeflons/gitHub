@@ -29,7 +29,7 @@ const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
 // camera
-Camera camera(vmath::vec3(0.0f, 0.0f, 10.0f));
+Camera camera(vmath::vec3(0.0f, 0.0f, 50.0f));
 float lastX = SCR_WIDTH / 2.0f;
 float lastY = SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
@@ -82,14 +82,15 @@ static  Model ourModel(FileSystem::getPath("nanosuit.obj"));
     vmath::mat4 projection = vmath::perspective(vmath::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
     vmath::mat4 view = camera.GetViewMatrix();
     ourShader.setMat4("projection", projection);
+    view *= vmath::rotate(10 *sin(currentFrame), 0.0f, 6.0f, 0.0f);
     ourShader.setMat4("view", view);
     
     // render the loaded model
     vmath::mat4 model = vmath::mat4::identity();
     // translate it down so it's at the center of the scene
-    //model *= vmath::scale(0.2f, 0.2f, 0.2f);    // it's a bit too big for our scene, so scale it down
+    model *= vmath::scale(0.2f, 0.2f, 0.2f);    // it's a bit too big for our scene, so scale it down
     ourShader.setMat4("model", model);
-    //ourModel.Draw(ourShader);
+    ourModel.Draw(ourShader);
 //    glBindVertexArray(vao);
 //    glDrawArrays(GL_TRIANGLES, 0, 3);
 
