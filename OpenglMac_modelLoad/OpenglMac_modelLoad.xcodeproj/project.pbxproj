@@ -125,7 +125,6 @@
 		BABE2806211D2B4C00BAD9EC /* 1.model_loading.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 1.model_loading.frag; sourceTree = "<group>"; };
 		BABE2807211D2B4C00BAD9EC /* 1.model_loading.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 1.model_loading.vert; sourceTree = "<group>"; };
 		BABE280A211D2B8D00BAD9EC /* root_directory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = root_directory.h; sourceTree = "<group>"; };
-		BABE280C211D2C2B00BAD9EC /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +189,6 @@
 				BA936744211C33FE00F529C3 /* Info.plist */,
 				BA936747211C33FE00F529C3 /* OpenglMac_modelLoad.entitlements */,
 				BA936758211C3ADA00F529C3 /* main.cpp */,
-				BABE280C211D2C2B00BAD9EC /* camera.h */,
 				BABE2806211D2B4C00BAD9EC /* 1.model_loading.frag */,
 				BABE2807211D2B4C00BAD9EC /* 1.model_loading.vert */,
 			);
