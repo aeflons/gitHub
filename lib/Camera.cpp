@@ -37,7 +37,7 @@ public:
     float MouseSensitivity;
     float Zoom;
     
-    Camera(vmath::vec3 position = vmath::vec3(0.0f,0.0f, 0.0f), vmath::vec3 up = vmath::vec3(0.0f, 1.0f, -0.0f), float yaw = YAW, float pitch = PITCH) : Front(vmath::vec3(0.0f, 0.0f, -1.0f)), MovementSpeed(SPEED), MouseSensitivity(SENSITIVITY), Zoom(ZOOM)
+    Camera(vmath::vec3 position = vmath::vec3(0.0f,0.0f, 0.0f), vmath::vec3 up = vmath::vec3(0.0f, 1.0f, 0.0f), float yaw = YAW, float pitch = PITCH) : Front(vmath::vec3(0.0f, 0.0f, -1.0f)), MovementSpeed(SPEED), MouseSensitivity(SENSITIVITY), Zoom(ZOOM)
     {
         Position = position;
         WorldUp = up;
@@ -91,6 +91,9 @@ public:
             if (Pitch < -89.0f)
                 Pitch = -89.0f;
         }
+        if (Yaw < 0.0f) {
+            Yaw += 360.0f;
+        }
         
         // Update Front, Right and Up Vectors using the updated Euler angles
         updateCameraVectors();
@@ -113,12 +116,15 @@ private:
     {
         // Calculate the new Front vector
         vmath::vec3 front;
-        front[0] = cos(vmath::radians(Yaw)) * cos(vmath::radians(Pitch));
+        front[0] = -sin(vmath::radians(Yaw)) * cos(vmath::radians(Pitch));
         front[1] = sin(vmath::radians(Pitch));
-        front[2] = sin(vmath::radians(Yaw)) * cos(vmath::radians(Pitch));
-//        Front = vmath::normalize(front);
+        front[2] = -cos(vmath::radians(Yaw)) * cos(vmath::radians(Pitch));
+        Front = vmath::normalize(front);
         // Also re-calculate the Right and Up vector
-        Right = vmath::normalize(vmath::cross(Front, WorldUp));  // Normalize the vectors, because their length gets closer to 0 the more you look up or down which results in slower movement.
+        front[0] = cos(vmath::radians(Yaw));
+        front[1] = 0;
+        front[2] = -sin(vmath::radians(Yaw));
+        Right = vmath::normalize(front);  // Normalize the vectors, because their length gets closer to 0 the more you look up or down which results in slower movement.
         Up    = vmath::normalize(vmath::cross(Right, Front));
         
     }
