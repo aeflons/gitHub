@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAE09B5221242019006DD08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE09B5121242019006DD08B /* Assets.xcassets */; };
+		BAE09B6021242080006DD08B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09B5F21242080006DD08B /* main.cpp */; };
+		BAE09B632124208E006DD08B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE09B622124208E006DD08B /* OpenGL.framework */; };
+		BAE09B6521242093006DD08B /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE09B6421242093006DD08B /* GLUT.framework */; };
+		BAE09B67212420A8006DD08B /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE09B66212420A8006DD08B /* libGLEW.2.1.0.dylib */; };
+		BAE09B69212420B5006DD08B /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE09B68212420B5006DD08B /* libglfw.3.2.dylib */; };
+		BAE09B6B212420C3006DD08B /* libassimp.4.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE09B6A212420C3006DD08B /* libassimp.4.1.0.dylib */; };
+		BAE09BA5212421ED006DD08B /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BA3212421ED006DD08B /* game.cpp */; };
+		BAE09C07212425BD006DD08B /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BDE212425BD006DD08B /* Camera.cpp */; };
+		BAE09C08212425BD006DD08B /* gl3w.c in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BE3212425BD006DD08B /* gl3w.c */; };
+		BAE09C09212425BD006DD08B /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BE7212425BD006DD08B /* image_DXT.c */; };
+		BAE09C0A212425BD006DD08B /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BE9212425BD006DD08B /* image_helper.c */; };
+		BAE09C0B212425BD006DD08B /* LoadShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BEB212425BD006DD08B /* LoadShaders.cpp */; };
+		BAE09C0C212425BD006DD08B /* loadtexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BED212425BD006DD08B /* loadtexture.cpp */; };
+		BAE09C0D212425BD006DD08B /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BF3212425BD006DD08B /* SOIL.c */; };
+		BAE09C0E212425BD006DD08B /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BF5212425BD006DD08B /* stb_image.cpp */; };
+		BAE09C0F212425BD006DD08B /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BF7212425BD006DD08B /* stb_image_aug.c */; };
+		BAE09C10212425BD006DD08B /* targa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BFB212425BD006DD08B /* targa.cpp */; };
+		BAE09C11212425BD006DD08B /* vbm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BFE212425BD006DD08B /* vbm.cpp */; };
+		BAE09C12212425BD006DD08B /* vdds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09C00212425BD006DD08B /* vdds.cpp */; };
+		BAE09C13212425BD006DD08B /* vermilion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09C02212425BD006DD08B /* vermilion.cpp */; };
+		BAE09C16212425E2006DD08B /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09C14212425E2006DD08B /* Shader.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BAE09B4B21242018006DD08B /* OpenSipmleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSipmleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE09B5121242019006DD08B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAE09B5621242019006DD08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE09B5921242019006DD08B /* OpenSipmleGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenSipmleGame.entitlements; sourceTree = "<group>"; };
+		BAE09B5F21242080006DD08B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BAE09B622124208E006DD08B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		BAE09B6421242093006DD08B /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		BAE09B66212420A8006DD08B /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		BAE09B68212420B5006DD08B /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		BAE09B6A212420C3006DD08B /* libassimp.4.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.4.1.0.dylib; path = ../../../../../../usr/local/Cellar/assimp/4.1.0/lib/libassimp.4.1.0.dylib; sourceTree = "<group>"; };
+		BAE09BA3212421ED006DD08B /* game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		BAE09BA4212421ED006DD08B /* game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		BAE09BDE212425BD006DD08B /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		BAE09BDF212425BD006DD08B /* CheckError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckError.h; sourceTree = "<group>"; };
+		BAE09BE0212425BD006DD08B /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		BAE09BE1212425BD006DD08B /* filesystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filesystem.h; sourceTree = "<group>"; };
+		BAE09BE2212425BD006DD08B /* gl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl3.h; sourceTree = "<group>"; };
+		BAE09BE3212425BD006DD08B /* gl3w.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gl3w.c; sourceTree = "<group>"; };
+		BAE09BE4212425BD006DD08B /* gl3w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl3w.h; sourceTree = "<group>"; };
+		BAE09BE5212425BD006DD08B /* glcorearb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glcorearb.h; sourceTree = "<group>"; };
+		BAE09BE6212425BD006DD08B /* glext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glext.h; sourceTree = "<group>"; };
+		BAE09BE7212425BD006DD08B /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
+		BAE09BE8212425BD006DD08B /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
+		BAE09BE9212425BD006DD08B /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
+		BAE09BEA212425BD006DD08B /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
+		BAE09BEB212425BD006DD08B /* LoadShaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadShaders.cpp; sourceTree = "<group>"; };
+		BAE09BEC212425BD006DD08B /* LoadShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadShaders.h; sourceTree = "<group>"; };
+		BAE09BED212425BD006DD08B /* loadtexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = loadtexture.cpp; sourceTree = "<group>"; };
+		BAE09BEE212425BD006DD08B /* mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat.h; sourceTree = "<group>"; };
+		BAE09BEF212425BD006DD08B /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
+		BAE09BF0212425BD006DD08B /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		BAE09BF1212425BD006DD08B /* root_directory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = root_directory.h; sourceTree = "<group>"; };
+		BAE09BF3212425BD006DD08B /* SOIL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL.c; sourceTree = "<group>"; };
+		BAE09BF4212425BD006DD08B /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
+		BAE09BF5212425BD006DD08B /* stb_image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image.cpp; sourceTree = "<group>"; };
+		BAE09BF6212425BD006DD08B /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		BAE09BF7212425BD006DD08B /* stb_image_aug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_aug.c; sourceTree = "<group>"; };
+		BAE09BF8212425BD006DD08B /* stb_image_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_aug.h; sourceTree = "<group>"; };
+		BAE09BF9212425BD006DD08B /* stbi_DDS_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug.h; sourceTree = "<group>"; };
+		BAE09BFA212425BD006DD08B /* stbi_DDS_aug_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug_c.h; sourceTree = "<group>"; };
+		BAE09BFB212425BD006DD08B /* targa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = targa.cpp; sourceTree = "<group>"; };
+		BAE09BFC212425BD006DD08B /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teapot.h; sourceTree = "<group>"; };
+		BAE09BFD212425BD006DD08B /* vapp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vapp.h; sourceTree = "<group>"; };
+		BAE09BFE212425BD006DD08B /* vbm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbm.cpp; sourceTree = "<group>"; };
+		BAE09BFF212425BD006DD08B /* vbm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbm.h; sourceTree = "<group>"; };
+		BAE09C00212425BD006DD08B /* vdds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vdds.cpp; sourceTree = "<group>"; };
+		BAE09C01212425BD006DD08B /* vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec.h; sourceTree = "<group>"; };
+		BAE09C02212425BD006DD08B /* vermilion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vermilion.cpp; sourceTree = "<group>"; };
+		BAE09C03212425BD006DD08B /* vermilion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vermilion.h; sourceTree = "<group>"; };
+		BAE09C04212425BD006DD08B /* vgl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgl.h; sourceTree = "<group>"; };
+		BAE09C05212425BD006DD08B /* vmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vmath.h; sourceTree = "<group>"; };
+		BAE09C06212425BD006DD08B /* vutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vutils.h; sourceTree = "<group>"; };
+		BAE09C14212425E2006DD08B /* Shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		BAE09C15212425E2006DD08B /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAE09B4821242018006DD08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE09B6B212420C3006DD08B /* libassimp.4.1.0.dylib in Frameworks */,
+				BAE09B69212420B5006DD08B /* libglfw.3.2.dylib in Frameworks */,
+				BAE09B67212420A8006DD08B /* libGLEW.2.1.0.dylib in Frameworks */,
+				BAE09B6521242093006DD08B /* GLUT.framework in Frameworks */,
+				BAE09B632124208E006DD08B /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAE09B4221242018006DD08B = {
+			isa = PBXGroup;
+			children = (
+				BAE09B4D21242018006DD08B /* OpenSipmleGame */,
+				BAE09B4C21242018006DD08B /* Products */,
+				BAE09B612124208E006DD08B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BAE09B4C21242018006DD08B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAE09B4B21242018006DD08B /* OpenSipmleGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAE09B4D21242018006DD08B /* OpenSipmleGame */ = {
+			isa = PBXGroup;
+			children = (
+				BAE09BDD212425BD006DD08B /* lib */,
+				BAE09B5121242019006DD08B /* Assets.xcassets */,
+				BAE09B5621242019006DD08B /* Info.plist */,
+				BAE09B5921242019006DD08B /* OpenSipmleGame.entitlements */,
+				BAE09B5F21242080006DD08B /* main.cpp */,
+				BAE09BA3212421ED006DD08B /* game.cpp */,
+				BAE09BA4212421ED006DD08B /* game.h */,
+				BAE09C14212425E2006DD08B /* Shader.cpp */,
+				BAE09C15212425E2006DD08B /* Shader.h */,
+			);
+			path = OpenSipmleGame;
+			sourceTree = "<group>";
+		};
+		BAE09B612124208E006DD08B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAE09B6A212420C3006DD08B /* libassimp.4.1.0.dylib */,
+				BAE09B68212420B5006DD08B /* libglfw.3.2.dylib */,
+				BAE09B66212420A8006DD08B /* libGLEW.2.1.0.dylib */,
+				BAE09B6421242093006DD08B /* GLUT.framework */,
+				BAE09B622124208E006DD08B /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAE09BDD212425BD006DD08B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BAE09BDE212425BD006DD08B /* Camera.cpp */,
+				BAE09BDF212425BD006DD08B /* CheckError.h */,
+				BAE09BE0212425BD006DD08B /* Cube.h */,
+				BAE09BE1212425BD006DD08B /* filesystem.h */,
+				BAE09BE2212425BD006DD08B /* gl3.h */,
+				BAE09BE3212425BD006DD08B /* gl3w.c */,
+				BAE09BE4212425BD006DD08B /* gl3w.h */,
+				BAE09BE5212425BD006DD08B /* glcorearb.h */,
+				BAE09BE6212425BD006DD08B /* glext.h */,
+				BAE09BE7212425BD006DD08B /* image_DXT.c */,
+				BAE09BE8212425BD006DD08B /* image_DXT.h */,
+				BAE09BE9212425BD006DD08B /* image_helper.c */,
+				BAE09BEA212425BD006DD08B /* image_helper.h */,
+				BAE09BEB212425BD006DD08B /* LoadShaders.cpp */,
+				BAE09BEC212425BD006DD08B /* LoadShaders.h */,
+				BAE09BED212425BD006DD08B /* loadtexture.cpp */,
+				BAE09BEE212425BD006DD08B /* mat.h */,
+				BAE09BEF212425BD006DD08B /* mesh.h */,
+				BAE09BF0212425BD006DD08B /* model.h */,
+				BAE09BF1212425BD006DD08B /* root_directory.h */,
+				BAE09BF3212425BD006DD08B /* SOIL.c */,
+				BAE09BF4212425BD006DD08B /* SOIL.h */,
+				BAE09BF5212425BD006DD08B /* stb_image.cpp */,
+				BAE09BF6212425BD006DD08B /* stb_image.h */,
+				BAE09BF7212425BD006DD08B /* stb_image_aug.c */,
+				BAE09BF8212425BD006DD08B /* stb_image_aug.h */,
+				BAE09BF9212425BD006DD08B /* stbi_DDS_aug.h */,
+				BAE09BFA212425BD006DD08B /* stbi_DDS_aug_c.h */,
+				BAE09BFB212425BD006DD08B /* targa.cpp */,
+				BAE09BFC212425BD006DD08B /* Teapot.h */,
+				BAE09BFD212425BD006DD08B /* vapp.h */,
+				BAE09BFE212425BD006DD08B /* vbm.cpp */,
+				BAE09BFF212425BD006DD08B /* vbm.h */,
+				BAE09C00212425BD006DD08B /* vdds.cpp */,
+				BAE09C01212425BD006DD08B /* vec.h */,
+				BAE09C02212425BD006DD08B /* vermilion.cpp */,
+				BAE09C03212425BD006DD08B /* vermilion.h */,
+				BAE09C04212425BD006DD08B /* vgl.h */,
+				BAE09C05212425BD006DD08B /* vmath.h */,
+				BAE09C06212425BD006DD08B /* vutils.h */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAE09B4A21242018006DD08B /* OpenSipmleGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE09B5C21242019006DD08B /* Build configuration list for PBXNativeTarget "OpenSipmleGame" */;
+			buildPhases = (
+				BAE09B4721242018006DD08B /* Sources */,
+				BAE09B4821242018006DD08B /* Frameworks */,
+				BAE09B4921242018006DD08B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenSipmleGame;
+			productName = OpenSipmleGame;
+			productReference = BAE09B4B21242018006DD08B /* OpenSipmleGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAE09B4321242018006DD08B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = yujunzhen;
+				TargetAttributes = {
+					BAE09B4A21242018006DD08B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = BAE09B4621242018006DD08B /* Build configuration list for PBXProject "OpenSipmleGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAE09B4221242018006DD08B;
+			productRefGroup = BAE09B4C21242018006DD08B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAE09B4A21242018006DD08B /* OpenSipmleGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAE09B4921242018006DD08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE09B5221242019006DD08B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAE09B4721242018006DD08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE09C0B212425BD006DD08B /* LoadShaders.cpp in Sources */,
+				BAE09C0C212425BD006DD08B /* loadtexture.cpp in Sources */,
+				BAE09C16212425E2006DD08B /* Shader.cpp in Sources */,
+				BAE09C0D212425BD006DD08B /* SOIL.c in Sources */,
+				BAE09C08212425BD006DD08B /* gl3w.c in Sources */,
+				BAE09BA5212421ED006DD08B /* game.cpp in Sources */,
+				BAE09C10212425BD006DD08B /* targa.cpp in Sources */,
+				BAE09C12212425BD006DD08B /* vdds.cpp in Sources */,
+				BAE09C0F212425BD006DD08B /* stb_image_aug.c in Sources */,
+				BAE09C07212425BD006DD08B /* Camera.cpp in Sources */,
+				BAE09C11212425BD006DD08B /* vbm.cpp in Sources */,
+				BAE09C0A212425BD006DD08B /* image_helper.c in Sources */,
+				BAE09C0E212425BD006DD08B /* stb_image.cpp in Sources */,
+				BAE09B6021242080006DD08B /* main.cpp in Sources */,
+				BAE09C13212425BD006DD08B /* vermilion.cpp in Sources */,
+				BAE09C09212425BD006DD08B /* image_DXT.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BAE09B5A21242019006DD08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BAE09B5B21242019006DD08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BAE09B5D21242019006DD08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenSipmleGame/OpenSipmleGame.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NLRV94SV3R;
+				HEADER_SEARCH_PATHS = (
+					"$(glew_header)",
+					"$(SRCROOT)/../lib",
+					"$(glfw_header)",
+					"$(glm_header)",
+					"$(assimp_header)",
+				);
+				INFOPLIST_FILE = OpenSipmleGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/assimp/4.1.0/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = alfons.OpenSipmleGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BAE09B5E21242019006DD08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenSipmleGame/OpenSipmleGame.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NLRV94SV3R;
+				HEADER_SEARCH_PATHS = (
+					"$(glew_header)",
+					"$(SRCROOT)/../lib",
+					"$(glfw_header)",
+					"$(glm_header)",
+					"$(assimp_header)",
+				);
+				INFOPLIST_FILE = OpenSipmleGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/assimp/4.1.0/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = alfons.OpenSipmleGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAE09B4621242018006DD08B /* Build configuration list for PBXProject "OpenSipmleGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE09B5A21242019006DD08B /* Debug */,
+				BAE09B5B21242019006DD08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE09B5C21242019006DD08B /* Build configuration list for PBXNativeTarget "OpenSipmleGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE09B5D21242019006DD08B /* Debug */,
+				BAE09B5E21242019006DD08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAE09B4321242018006DD08B /* Project object */;
+}
