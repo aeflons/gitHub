@@ -22,13 +22,18 @@
 		BAE09C0B212425BD006DD08B /* LoadShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BEB212425BD006DD08B /* LoadShaders.cpp */; };
 		BAE09C0C212425BD006DD08B /* loadtexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BED212425BD006DD08B /* loadtexture.cpp */; };
 		BAE09C0D212425BD006DD08B /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BF3212425BD006DD08B /* SOIL.c */; };
-		BAE09C0E212425BD006DD08B /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BF5212425BD006DD08B /* stb_image.cpp */; };
 		BAE09C0F212425BD006DD08B /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BF7212425BD006DD08B /* stb_image_aug.c */; };
 		BAE09C10212425BD006DD08B /* targa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BFB212425BD006DD08B /* targa.cpp */; };
 		BAE09C11212425BD006DD08B /* vbm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09BFE212425BD006DD08B /* vbm.cpp */; };
 		BAE09C12212425BD006DD08B /* vdds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09C00212425BD006DD08B /* vdds.cpp */; };
 		BAE09C13212425BD006DD08B /* vermilion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09C02212425BD006DD08B /* vermilion.cpp */; };
 		BAE09C16212425E2006DD08B /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09C14212425E2006DD08B /* Shader.cpp */; };
+		BAE09C5F21251E55006DD08B /* Texture2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09C5D21251E55006DD08B /* Texture2D.cpp */; };
+		BAE09C62212558E3006DD08B /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09C60212558E3006DD08B /* ResourceManager.cpp */; };
+		BAE09C6521259025006DD08B /* SpriteRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE09C6321259025006DD08B /* SpriteRender.cpp */; };
+		BAE09C672125952B006DD08B /* sprite.vert in Resources */ = {isa = PBXBuildFile; fileRef = BAE09C662125952B006DD08B /* sprite.vert */; };
+		BAE09C6921259534006DD08B /* sprite.frag in Resources */ = {isa = PBXBuildFile; fileRef = BAE09C6821259534006DD08B /* sprite.frag */; };
+		BAE09C6B21259590006DD08B /* sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = BAE09C6A21259590006DD08B /* sprite.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +91,15 @@
 		BAE09C06212425BD006DD08B /* vutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vutils.h; sourceTree = "<group>"; };
 		BAE09C14212425E2006DD08B /* Shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 		BAE09C15212425E2006DD08B /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		BAE09C5D21251E55006DD08B /* Texture2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Texture2D.cpp; sourceTree = "<group>"; };
+		BAE09C5E21251E55006DD08B /* Texture2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Texture2D.h; sourceTree = "<group>"; };
+		BAE09C60212558E3006DD08B /* ResourceManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
+		BAE09C61212558E3006DD08B /* ResourceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
+		BAE09C6321259025006DD08B /* SpriteRender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteRender.cpp; sourceTree = "<group>"; };
+		BAE09C6421259025006DD08B /* SpriteRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteRender.h; sourceTree = "<group>"; };
+		BAE09C662125952B006DD08B /* sprite.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sprite.vert; sourceTree = "<group>"; };
+		BAE09C6821259534006DD08B /* sprite.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sprite.frag; sourceTree = "<group>"; };
+		BAE09C6A21259590006DD08B /* sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +147,15 @@
 				BAE09BA4212421ED006DD08B /* game.h */,
 				BAE09C14212425E2006DD08B /* Shader.cpp */,
 				BAE09C15212425E2006DD08B /* Shader.h */,
+				BAE09C5D21251E55006DD08B /* Texture2D.cpp */,
+				BAE09C5E21251E55006DD08B /* Texture2D.h */,
+				BAE09C60212558E3006DD08B /* ResourceManager.cpp */,
+				BAE09C61212558E3006DD08B /* ResourceManager.h */,
+				BAE09C6321259025006DD08B /* SpriteRender.cpp */,
+				BAE09C6421259025006DD08B /* SpriteRender.h */,
+				BAE09C662125952B006DD08B /* sprite.vert */,
+				BAE09C6821259534006DD08B /* sprite.frag */,
+				BAE09C6A21259590006DD08B /* sprite.png */,
 			);
 			path = OpenSipmleGame;
 			sourceTree = "<group>";
@@ -254,6 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAE09B5221242019006DD08B /* Assets.xcassets in Resources */,
+				BAE09C6921259534006DD08B /* sprite.frag in Resources */,
+				BAE09C6B21259590006DD08B /* sprite.png in Resources */,
+				BAE09C672125952B006DD08B /* sprite.vert in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +294,7 @@
 				BAE09C0C212425BD006DD08B /* loadtexture.cpp in Sources */,
 				BAE09C16212425E2006DD08B /* Shader.cpp in Sources */,
 				BAE09C0D212425BD006DD08B /* SOIL.c in Sources */,
+				BAE09C5F21251E55006DD08B /* Texture2D.cpp in Sources */,
 				BAE09C08212425BD006DD08B /* gl3w.c in Sources */,
 				BAE09BA5212421ED006DD08B /* game.cpp in Sources */,
 				BAE09C10212425BD006DD08B /* targa.cpp in Sources */,
@@ -276,10 +303,11 @@
 				BAE09C07212425BD006DD08B /* Camera.cpp in Sources */,
 				BAE09C11212425BD006DD08B /* vbm.cpp in Sources */,
 				BAE09C0A212425BD006DD08B /* image_helper.c in Sources */,
-				BAE09C0E212425BD006DD08B /* stb_image.cpp in Sources */,
 				BAE09B6021242080006DD08B /* main.cpp in Sources */,
+				BAE09C6521259025006DD08B /* SpriteRender.cpp in Sources */,
 				BAE09C13212425BD006DD08B /* vermilion.cpp in Sources */,
 				BAE09C09212425BD006DD08B /* image_DXT.c in Sources */,
+				BAE09C62212558E3006DD08B /* ResourceManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
