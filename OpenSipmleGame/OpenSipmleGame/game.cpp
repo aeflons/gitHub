@@ -17,11 +17,11 @@ Game::~Game(){
 void Game:: Init(){
     ResouceManager::LoadShader("sprite.vert", "sprite.frag", nullptr, "sprite");
     // Configure shaders
-    glm::mat4 projection = glm::ortho(0.0f, static_cast<GLfloat>(this->Width), static_cast<GLfloat>(this->Height), 0.0f, -1.0f, 1.0f);
-    //ResouceManager::GetShader("sprite").use().SetInt("image", 0);
-    //ResouceManager::GetShader("sprite").SetMatrix4("projection", projection);
-    // Load textures
-    ResouceManager::LoadTexture("sprite.png", GL_TRUE, "face");
+//    glm::mat4 projection = glm::ortho(0.0f, static_cast<GLfloat>(this->Width), static_cast<GLfloat>(this->Height), 0.0f, -1.0f, 1.0f);
+//    //ResouceManager::GetShader("sprite").use().SetInt("image", 0);
+//    //ResouceManager::GetShader("sprite").SetMatrix4("projection", projection);
+//    // Load textures
+//    ResouceManager::LoadTexture("sprite.png", GL_TRUE, "face");
     // Set render-specific controls
     Shader shader = ResouceManager::GetShader("sprite");
     Renderer = new SpriteRender(shader);

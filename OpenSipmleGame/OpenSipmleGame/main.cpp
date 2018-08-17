@@ -13,6 +13,7 @@
 #include <GLFW/glfw3.h>
 #include "game.h"
 #include "ResourceManager.h"
+#include "LoadShaders.h"
 // GLFW function declerations
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
 
@@ -56,9 +57,42 @@ int main(int argc, char *argv[]){
     glEnable(GL_CULL_FACE);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-    Breakout.Init();
+    //Breakout.Init();
     GLfloat deltaTime = 0.0f;
     GLfloat lastFrame = 0.0f;
+    
+    GLuint VBO,quedVao;
+    GLfloat vertices[] = {
+        // Pos      // Tex
+        0.0f, 1.0f, 0.0f, 1.0f,
+        1.0f, 0.0f, 1.0f, 0.0f,
+        0.0f, 0.0f, 0.0f, 0.0f,
+        
+        0.0f, 1.0f, 0.0f, 1.0f,
+        1.0f, 1.0f, 1.0f, 1.0f,
+        1.0f, 0.0f, 1.0f, 0.0f
+    };
+//    Shader shader = ResouceManager::LoadShader("sprite.vert", "sprite.frag", nullptr,"sprite");
+//    shader.use();
+    GLuint program;
+    ShaderInfo shaders[] = {{GL_VERTEX_SHADER,"sprite.vert"},{GL_FRAGMENT_SHADER,"sprite.frag"},{GL_NONE, NULL}};
+    program = LoadShaders(shaders);
+    glGenVertexArrays(1, &quedVao);
+    glBindVertexArray(quedVao);
+    glGenBuffers(1, &VBO);
+    
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    
+    
+    glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(GLfloat), (GLvoid*)0);
+    glEnableVertexAttribArray(0);
+
+    glBindVertexArray(0);
+    glUseProgram(program);
+
+    
+
     while (!glfwWindowShouldClose(window))
     {
         // Calculate delta time
@@ -77,9 +111,14 @@ int main(int argc, char *argv[]){
         // Render
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
-        Breakout.Render();
-        
+       // Breakout.Render();
+     
+        glBindVertexArray(quedVao);
+        glDrawArrays(GL_TRIANGLES, 0, 6);
+        glBindVertexArray(0);
         glfwSwapBuffers(window);
+
+        
     }
     ResouceManager::Clear();
     
