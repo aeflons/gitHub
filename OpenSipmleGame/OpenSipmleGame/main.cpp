@@ -32,8 +32,8 @@ int main(int argc, char *argv[]){
         return -1;
     }
     std::cout << "Start OpenGL core profile version 3.3" << std::endl;
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     
@@ -74,22 +74,24 @@ int main(int argc, char *argv[]){
     };
 //    Shader shader = ResouceManager::LoadShader("sprite.vert", "sprite.frag", nullptr,"sprite");
 //    shader.use();
-    GLuint program;
-    ShaderInfo shaders[] = {{GL_VERTEX_SHADER,"sprite.vert"},{GL_FRAGMENT_SHADER,"sprite.frag"},{GL_NONE, NULL}};
-    program = LoadShaders(shaders);
-    glGenVertexArrays(1, &quedVao);
-    glBindVertexArray(quedVao);
-    glGenBuffers(1, &VBO);
-    
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-    
-    
-    glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(GLfloat), (GLvoid*)0);
-    glEnableVertexAttribArray(0);
-
-    glBindVertexArray(0);
-    glUseProgram(program);
+//    GLuint program;
+//    ShaderInfo shaders[] = {{GL_VERTEX_SHADER,"sprite.vert"},{GL_FRAGMENT_SHADER,"sprite.frag"},{GL_NONE, NULL}};
+//    program = LoadShaders(shaders);
+//    glUseProgram(program);
+//
+//    glGenVertexArrays(1, &quedVao);
+//    glBindVertexArray(quedVao);
+//    glGenBuffers(1, &VBO);
+//    
+//    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+//    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+//    
+//    
+//    glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (GLvoid*)0);
+//    glEnableVertexAttribArray(0);
+//
+//    glBindVertexArray(0);
+//    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
     
 
@@ -109,14 +111,13 @@ int main(int argc, char *argv[]){
         Breakout.Update(deltaTime);
         
         // Render
-        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
-       // Breakout.Render();
+        Breakout.Render();
      
-        glBindVertexArray(quedVao);
-        glDrawArrays(GL_TRIANGLES, 0, 6);
-        glBindVertexArray(0);
-        glfwSwapBuffers(window);
+//        glBindVertexArray(quedVao);
+//        glDrawArrays(GL_TRIANGLES, 0, 6);
+//        glBindVertexArray(0);
+//        glfwSwapBuffers(window);
 
         
     }

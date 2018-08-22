@@ -65,40 +65,47 @@ void init(){ //带颜色
         glGenVertexArrays(NumVAOs, VAOs);
         glBindVertexArray(VAOs[Triangles]);
     
-        VertexData vertices[NumVertices] = {
-            {{255,   0,   0, 255},  { -0.90, -0.90 }},
-            {{  0, 255,   0, 255},  {  0.85, -0.90 }},
-            {{  0,   0, 0, 255},  { -0.90,  0.85 }},
-            {{ 0,  10,  10, 255},  {  0.90, -0.85 }},
-            {{0, 100, 100, 255},  {  0.90,  0.90 }},
-            {{0, 0, 255, 255},  { -0.85,  0.90 }}
-        };
-    
+//        VertexData vertices[NumVertices] = {
+//            {{255,   0,   0, 255},  { -0.90, -0.90 }},
+//            {{  0, 255,   0, 255},  {  0.85, -0.90 }},
+//            {{  0,   0, 0, 255},  { -0.90,  0.85 }},
+//            {{ 0,  10,  10, 255},  {  0.90, -0.85 }},
+//            {{0, 100, 100, 255},  {  0.90,  0.90 }},
+//            {{0, 0, 255, 255},  { -0.85,  0.90 }}
+//        };
+    GLfloat vertices[] = {
+        // Pos      // Tex
+        0.0f, 1.0f, 0.0f, 1.0f,
+        1.0f, 0.0f, 1.0f, 0.0f,
+        0.0f, 0.0f, 0.0f, 0.0f,
+        
+        0.0f, 1.0f, 0.0f, 1.0f,
+        1.0f, 1.0f, 1.0f, 1.0f,
+        1.0f, 0.0f, 1.0f, 0.0f
+    };
         glGenBuffers(NumBuffers, Buffers);
         glBindBuffer(GL_ARRAY_BUFFER, Buffers[ArrayBuffer]);
         glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
     
         ShaderInfo shaders[] = {
-            { GL_VERTEX_SHADER, "triangles.vert"},
-            { GL_FRAGMENT_SHADER, "triangles.frag"},
-            { GL_NONE, NULL }
-        };
+            {GL_VERTEX_SHADER,"sprite.vert"},
+            {GL_FRAGMENT_SHADER,"sprite.frag"},
+            {GL_NONE, NULL}};
+    
       GLuint  program = LoadShaders(shaders);
         glUseProgram(program);
     
-        GLuint vColor = glGetAttribLocation(program, "vColor");
-        GLuint vPonsition = glGetAttribLocation(program, "vPos");
-        glVertexAttribPointer(vColor, 4, GL_UNSIGNED_BYTE, GL_FALSE, sizeof(VertexData), BUFFER_OFFSET(0));
-       glVertexAttribPointer(vPonsition, 2, GL_FLOAT, GL_FALSE, sizeof(VertexData), BUFFER_OFFSET(sizeof(vertices[0].color)));
-        glEnableVertexAttribArray(vColor);
-       glEnableVertexAttribArray(vPonsition);
+    
+        glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(float), 0);
+    
+        glEnableVertexAttribArray(0);
 }
 void display(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
     
     glBindVertexArray(VAOs[Triangles]);
-    glDrawArrays(GL_LINE_BIT, 0, NumVertices);
+    glDrawArrays(GL_TRIANGLES, 0, NumVertices);
 //    glutSwapBuffers();
 //    glutPostRedisplay();
     glFlush();

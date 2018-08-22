@@ -19,6 +19,8 @@
 		BA2235BD20FCB47100E8BD3F /* triangles.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA2235BB20FCB47000E8BD3F /* triangles.vert */; };
 		BA2235CB20FDD85900E8BD3F /* gl3w.c in Sources */ = {isa = PBXBuildFile; fileRef = BA2235C620FDD85800E8BD3F /* gl3w.c */; };
 		BA2235CE20FDD85900E8BD3F /* targa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA2235C920FDD85900E8BD3F /* targa.cpp */; };
+		BACA3C5C2126B8690094855F /* sprite.vert in Resources */ = {isa = PBXBuildFile; fileRef = BACA3C5B2126B8690094855F /* sprite.vert */; };
+		BACA3C5E2126B86D0094855F /* sprite.frag in Resources */ = {isa = PBXBuildFile; fileRef = BACA3C5D2126B86D0094855F /* sprite.frag */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		BA2235DA20FDD88900E8BD3F /* gl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl3.h; sourceTree = "<group>"; };
 		BA2235DB20FDD89900E8BD3F /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
 		BA2235DC20FDD89900E8BD3F /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teapot.h; sourceTree = "<group>"; };
+		BACA3C5B2126B8690094855F /* sprite.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = sprite.vert; path = ../../OpenSipmleGame/OpenSipmleGame/sprite.vert; sourceTree = "<group>"; };
+		BACA3C5D2126B86D0094855F /* sprite.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = sprite.frag; path = ../../OpenSipmleGame/OpenSipmleGame/sprite.frag; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 				BA22358520FCAD9500E8BD3F /* Assets.xcassets */,
 				BA22358A20FCAD9500E8BD3F /* Info.plist */,
 				BA22358B20FCAD9500E8BD3F /* main.cpp */,
+				BACA3C5D2126B86D0094855F /* sprite.frag */,
+				BACA3C5B2126B8690094855F /* sprite.vert */,
 				BA22358D20FCAD9500E8BD3F /* OpenglMac_01.entitlements */,
 			);
 			path = OpenglMac_01;
@@ -300,7 +306,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BACA3C5E2126B86D0094855F /* sprite.frag in Resources */,
 				BA22358620FCAD9500E8BD3F /* Assets.xcassets in Resources */,
+				BACA3C5C2126B8690094855F /* sprite.vert in Resources */,
 				BA2235BC20FCB47100E8BD3F /* triangles.frag in Resources */,
 				BA2235BD20FCB47100E8BD3F /* triangles.vert in Resources */,
 			);
