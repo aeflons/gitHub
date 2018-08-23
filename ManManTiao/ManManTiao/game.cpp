@@ -12,6 +12,7 @@
 SpriteRender  *Renderer;
 GameObject    *Player;
 BallObject    *Ball;
+PartucleGenerator *partucle;
 // 初始化球的速度
 const vmath::vec2 INITIAL_BALL_VELOCITY(0.05,- 0.1);
 // 球的半径
@@ -34,16 +35,21 @@ Game::~Game(){
 }
 void Game:: Init(){
     ResouceManager::LoadShader("sprite.vert", "sprite.frag", nullptr, "sprite");
+    ResouceManager::LoadShader("Partucle.vert", "Partucle.frag", nullptr, "parture");
     // Configure shaders
     vmath::mat4 projection = vmath::ortho(0.0f, 1.0, 1.0, 0.0f, -1.0f, 1.0f);
     //ResouceManager::GetShader("sprite").use().SetInt("image", 0);
     //ResouceManager::GetShader("sprite").SetMatrix4("projection", projection);
     // Load textures
+//    vmath::mat4 projection = vmath::ortho(0.0f, 1.0f, 1.0f, 0.0f, -1.0f, 1.0f);
+    ResouceManager::GetShader("parture").use().SetMatrix4("projection", projection);
+    
     ResouceManager::LoadTexture("background.jpg", GL_TRUE, "background");
     ResouceManager::LoadTexture("block.jpg", GL_TRUE, "block");
     ResouceManager::LoadTexture("block_solid.jpg", GL_TRUE, "block_soild");
     ResouceManager::LoadTexture("paddle.jpg", GL_TRUE, "paddle");
     ResouceManager::LoadTexture("sprite.jpg", GL_TRUE, "face");
+    ResouceManager::LoadTexture("particle.jpg", GL_TRUE, "particle");
 
     // Set render-specific controls
     Shader shader = ResouceManager::GetShader("sprite");
@@ -56,10 +62,12 @@ void Game:: Init(){
     Player = new GameObject(playerPos,PLAYER_SIZE,ResouceManager::GetTexture("paddle"));
     vmath::vec2 balllPos = playerPos + vmath::vec2(PLAYER_SIZE[0] / 2 - BALL_RADIUS / 800, -BALL_RADIUS / 800 * 2);
     Ball = new BallObject(balllPos, BALL_RADIUS / 800, INITIAL_BALL_VELOCITY, ResouceManager::GetTexture("face"));
+    partucle = new PartucleGenerator(ResouceManager::GetShader("parture"),ResouceManager::GetTexture("particle"),100);
 }
 void Game::Update(GLfloat dt){
     Ball->move(dt, 1);
     this->DoCollisions();
+    partucle->Update(dt, *Ball, 2,vmath::vec2(Ball->Size / 2.0f));
 }
 void Game:: ProcessInput(GLfloat dt){
     if (this->state == GAME_ACTIVE)
@@ -97,6 +105,8 @@ void Game:: Render(){
     this->levels[this->level].Draw(*Renderer);
     Player->draw(*Renderer);
     Ball->draw(*Renderer);
+    partucle->Draw();
+
     Texture2D texture = ResouceManager::GetTexture("background");
     
     Renderer->DrawSprite(texture, vmath::vec2(0, 0), vmath::vec2(1, 1), 0.0f, vmath::vec4(1.0f));
@@ -191,10 +201,11 @@ void Game:: DoCollisions(){
         GLfloat distance = (Ball->Position[0] + Ball->Radius) - centerBoard;
         GLfloat percentage = distance / (Player->Size[0] / 2);
         // 依据结果移动
+    
         GLfloat strength = 2.0f;
         vmath::vec2 oldVelocity = Ball->Velocity;
         Ball->Velocity[0] = INITIAL_BALL_VELOCITY[0] * percentage * strength;
         Ball->Velocity[1] = -Ball->Velocity[1];
         Ball->Velocity = vmath::normalize(Ball->Velocity) * vmath::length(oldVelocity);
-    } 
+    }
 }

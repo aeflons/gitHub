@@ -16,6 +16,7 @@
 #include "SpriteRender.h"
 #include "GameLevel.h"
 #include "BallObject.h"
+#include "PartucleGenerator.h"
 enum GameState{
     GAME_ACTIVE,
     GAME_MENU,

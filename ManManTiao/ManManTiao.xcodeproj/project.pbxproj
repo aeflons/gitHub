@@ -10,6 +10,10 @@
 		BAC4D2F7212D122A0089CE56 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAC4D2F6212D122A0089CE56 /* background.jpg */; };
 		BAC4D2F9212D3FE70089CE56 /* paddle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAC4D2F8212D3FE70089CE56 /* paddle.jpg */; };
 		BAC4D2FB212D440B0089CE56 /* BallObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAC4D2FA212D440B0089CE56 /* BallObject.cpp */; };
+		BAC4D300212E53D80089CE56 /* PartucleGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAC4D2FE212E53D80089CE56 /* PartucleGenerator.cpp */; };
+		BAC4D302212E54290089CE56 /* Partucle.vert in Resources */ = {isa = PBXBuildFile; fileRef = BAC4D301212E54290089CE56 /* Partucle.vert */; };
+		BAC4D304212E54340089CE56 /* Partucle.frag in Resources */ = {isa = PBXBuildFile; fileRef = BAC4D303212E54340089CE56 /* Partucle.frag */; };
+		BAC4D307212E64690089CE56 /* particle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAC4D306212E64690089CE56 /* particle.jpg */; };
 		BAD2C9AA212AA7180089E2CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD2C9A9212AA7180089E2CF /* Assets.xcassets */; };
 		BAD2C9B9212AA72E0089E2CF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD2C9B8212AA72E0089E2CF /* OpenGL.framework */; };
 		BAD2C9BB212AA73A0089E2CF /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD2C9BA212AA73A0089E2CF /* GLUT.framework */; };
@@ -48,7 +52,12 @@
 		BAC4D2F6212D122A0089CE56 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		BAC4D2F8212D3FE70089CE56 /* paddle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paddle.jpg; sourceTree = "<group>"; };
 		BAC4D2FA212D440B0089CE56 /* BallObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BallObject.cpp; sourceTree = "<group>"; };
-		BAC4D2FC212D44220089CE56 /* BallObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BallObject.h; sourceTree = "<group>"; };
+		BAC4D2FE212E53D80089CE56 /* PartucleGenerator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PartucleGenerator.cpp; sourceTree = "<group>"; };
+		BAC4D2FF212E53D80089CE56 /* PartucleGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartucleGenerator.h; sourceTree = "<group>"; };
+		BAC4D301212E54290089CE56 /* Partucle.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Partucle.vert; sourceTree = "<group>"; };
+		BAC4D303212E54340089CE56 /* Partucle.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Partucle.frag; sourceTree = "<group>"; };
+		BAC4D305212E586D0089CE56 /* BallObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallObject.h; sourceTree = "<group>"; };
+		BAC4D306212E64690089CE56 /* particle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = particle.jpg; sourceTree = "<group>"; };
 		BAD2C9A3212AA7170089E2CF /* ManManTiao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManManTiao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD2C9A9212AA7180089E2CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAD2C9AE212AA7180089E2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,9 +149,9 @@
 		BAD2C99A212AA7170089E2CF = {
 			isa = PBXGroup;
 			children = (
+				BAD2C9B7212AA72E0089E2CF /* Frameworks */,
 				BAD2C9A5212AA7170089E2CF /* ManManTiao */,
 				BAD2C9A4212AA7170089E2CF /* Products */,
-				BAD2C9B7212AA72E0089E2CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,14 +187,19 @@
 				BAD2CA18212ADBA40089E2CF /* GameLevel.cpp */,
 				BAD2CA19212ADBA40089E2CF /* GameLevel.h */,
 				BAC4D2FA212D440B0089CE56 /* BallObject.cpp */,
-				BAC4D2FC212D44220089CE56 /* BallObject.h */,
+				BAC4D305212E586D0089CE56 /* BallObject.h */,
+				BAC4D2FE212E53D80089CE56 /* PartucleGenerator.cpp */,
+				BAC4D2FF212E53D80089CE56 /* PartucleGenerator.h */,
 				BAD2C9F9212AAD990089E2CF /* sprite.vert */,
 				BAD2C9FB212AAD9F0089E2CF /* sprite.frag */,
+				BAC4D301212E54290089CE56 /* Partucle.vert */,
+				BAC4D303212E54340089CE56 /* Partucle.frag */,
 				BAD2CA1D212BC5890089E2CF /* level1 */,
 				BAD2CA1F212BF1FF0089E2CF /* block_solid.jpg */,
 				BAD2CA20212BF2000089E2CF /* block.jpg */,
 				BAC4D2F6212D122A0089CE56 /* background.jpg */,
 				BAC4D2F8212D3FE70089CE56 /* paddle.jpg */,
+				BAC4D306212E64690089CE56 /* particle.jpg */,
 			);
 			path = ManManTiao;
 			sourceTree = "<group>";
@@ -306,11 +320,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC4D304212E54340089CE56 /* Partucle.frag in Resources */,
+				BAC4D302212E54290089CE56 /* Partucle.vert in Resources */,
 				BAD2CA1E212BC5890089E2CF /* level1 in Resources */,
 				BAD2CA22212BF2000089E2CF /* block.jpg in Resources */,
 				BAD2C9AA212AA7180089E2CF /* Assets.xcassets in Resources */,
 				BAD2CA13212AB43E0089E2CF /* sprite.jpg in Resources */,
 				BAC4D2F9212D3FE70089CE56 /* paddle.jpg in Resources */,
+				BAC4D307212E64690089CE56 /* particle.jpg in Resources */,
 				BAD2C9FC212AAD9F0089E2CF /* sprite.frag in Resources */,
 				BAC4D2F7212D122A0089CE56 /* background.jpg in Resources */,
 				BAD2C9FA212AAD990089E2CF /* sprite.vert in Resources */,
@@ -338,6 +355,7 @@
 				BAD2CA0D212AB43E0089E2CF /* ResourceManager.cpp in Sources */,
 				BAD2CA10212AB43E0089E2CF /* SpriteRender.cpp in Sources */,
 				BAD2CA14212AB43E0089E2CF /* Shader.cpp in Sources */,
+				BAC4D300212E53D80089CE56 /* PartucleGenerator.cpp in Sources */,
 				BAD2CA0E212AB43E0089E2CF /* game.cpp in Sources */,
 				BAD2C9F0212AA7DD0089E2CF /* SOIL.c in Sources */,
 				BAD2C9F2212AA7DD0089E2CF /* stb_image_aug.c in Sources */,

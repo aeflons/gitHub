@@ -24,7 +24,7 @@ void GameLevel::Load(const char *file, GLuint levelWidth,GLuint levelHeight){
             std::istringstream sstream(line);
             std::vector<GLuint> row;
             while (sstream >> titleCode) {
-                cout<<titleCode<<endl;
+               // cout<<titleCode<<endl;
 
                 row.push_back(titleCode);
             }
