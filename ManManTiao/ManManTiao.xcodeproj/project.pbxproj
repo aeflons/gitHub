@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA9F4FB2212EC1D60031BB9E /* processing.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA9F4FB1212EC1D60031BB9E /* processing.vert */; };
+		BA9F4FB4212EC1DC0031BB9E /* processing.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA9F4FB3212EC1DC0031BB9E /* processing.frag */; };
+		BA9F4FB7212FA1E50031BB9E /* PostProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA9F4FB5212FA1E50031BB9E /* PostProcessor.cpp */; };
 		BAC4D2F7212D122A0089CE56 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAC4D2F6212D122A0089CE56 /* background.jpg */; };
 		BAC4D2F9212D3FE70089CE56 /* paddle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAC4D2F8212D3FE70089CE56 /* paddle.jpg */; };
 		BAC4D2FB212D440B0089CE56 /* BallObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAC4D2FA212D440B0089CE56 /* BallObject.cpp */; };
@@ -49,6 +52,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA9F4FB1212EC1D60031BB9E /* processing.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = processing.vert; sourceTree = "<group>"; };
+		BA9F4FB3212EC1DC0031BB9E /* processing.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = processing.frag; sourceTree = "<group>"; };
+		BA9F4FB5212FA1E50031BB9E /* PostProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PostProcessor.cpp; sourceTree = "<group>"; };
+		BA9F4FB6212FA1E50031BB9E /* PostProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostProcessor.h; sourceTree = "<group>"; };
 		BAC4D2F6212D122A0089CE56 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		BAC4D2F8212D3FE70089CE56 /* paddle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paddle.jpg; sourceTree = "<group>"; };
 		BAC4D2FA212D440B0089CE56 /* BallObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BallObject.cpp; sourceTree = "<group>"; };
@@ -190,10 +197,14 @@
 				BAC4D305212E586D0089CE56 /* BallObject.h */,
 				BAC4D2FE212E53D80089CE56 /* PartucleGenerator.cpp */,
 				BAC4D2FF212E53D80089CE56 /* PartucleGenerator.h */,
+				BA9F4FB5212FA1E50031BB9E /* PostProcessor.cpp */,
+				BA9F4FB6212FA1E50031BB9E /* PostProcessor.h */,
 				BAD2C9F9212AAD990089E2CF /* sprite.vert */,
 				BAD2C9FB212AAD9F0089E2CF /* sprite.frag */,
 				BAC4D301212E54290089CE56 /* Partucle.vert */,
 				BAC4D303212E54340089CE56 /* Partucle.frag */,
+				BA9F4FB1212EC1D60031BB9E /* processing.vert */,
+				BA9F4FB3212EC1DC0031BB9E /* processing.frag */,
 				BAD2CA1D212BC5890089E2CF /* level1 */,
 				BAD2CA1F212BF1FF0089E2CF /* block_solid.jpg */,
 				BAD2CA20212BF2000089E2CF /* block.jpg */,
@@ -325,8 +336,10 @@
 				BAD2CA1E212BC5890089E2CF /* level1 in Resources */,
 				BAD2CA22212BF2000089E2CF /* block.jpg in Resources */,
 				BAD2C9AA212AA7180089E2CF /* Assets.xcassets in Resources */,
+				BA9F4FB2212EC1D60031BB9E /* processing.vert in Resources */,
 				BAD2CA13212AB43E0089E2CF /* sprite.jpg in Resources */,
 				BAC4D2F9212D3FE70089CE56 /* paddle.jpg in Resources */,
+				BA9F4FB4212EC1DC0031BB9E /* processing.frag in Resources */,
 				BAC4D307212E64690089CE56 /* particle.jpg in Resources */,
 				BAD2C9FC212AAD9F0089E2CF /* sprite.frag in Resources */,
 				BAC4D2F7212D122A0089CE56 /* background.jpg in Resources */,
@@ -348,6 +361,7 @@
 				BAD2C9EE212AA7DD0089E2CF /* LoadShaders.cpp in Sources */,
 				BAD2C9F8212AA7F40089E2CF /* main.cpp in Sources */,
 				BAD2CA12212AB43E0089E2CF /* Texture2D.cpp in Sources */,
+				BA9F4FB7212FA1E50031BB9E /* PostProcessor.cpp in Sources */,
 				BAD2C9ED212AA7DD0089E2CF /* image_helper.c in Sources */,
 				BAD2CA17212AC9910089E2CF /* GameObject.cpp in Sources */,
 				BAD2C9EA212AA7DD0089E2CF /* Camera.cpp in Sources */,

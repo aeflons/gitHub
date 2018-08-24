@@ -50,15 +50,25 @@ void SpriteRender::DrawSprite(Texture2D &texture, vmath::vec2 position, vmath::v
 void SpriteRender::initRenderData()
 {
     GLuint VAO,VBO;
+//    GLfloat vertices[] = {
+//        // Pos      // Tex
+//        0.0f, 1.0f, 0.96f, 0.04f,
+//        1.0f, 0.0f, 0.04f, 0.96f,
+//        0.0f, 0.0f, 0.04f, 0.04f,
+////
+//        0.0f, 1.0f, 0.96f, 0.04f,
+//        1.0f, 1.0f, 0.96f, 0.96f,
+//        1.0f, 0.0f, 0.04f, 0.96f
+//    };
     GLfloat vertices[] = {
         // Pos      // Tex
-        0.0f, 1.0f, 0.96f, 0.04f,
-        1.0f, 0.0f, 0.04f, 0.96f,
-        0.0f, 0.0f, 0.04f, 0.04f,
-//
-        0.0f, 1.0f, 0.96f, 0.04f,
-        1.0f, 1.0f, 0.96f, 0.96f,
-        1.0f, 0.0f, 0.04f, 0.96f
+        0.0f, 1.0f, 0.0f, 1.0f,
+        1.0f, 0.0f, 1.00f, 0.0f,
+        0.0f, 0.0f, 0.00f, 0.00f,
+        //
+        0.0f, 1.0f,  0.0f, 1.0f,
+        1.0f, 1.0f, 1.0f, 1.0f,
+        1.0f, 0.0f,1.0f, 0.0f,
     };
 
     glGenVertexArrays(1, &this->quedVao);
