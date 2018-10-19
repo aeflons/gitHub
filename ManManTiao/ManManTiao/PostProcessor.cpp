@@ -11,17 +11,17 @@
 void PostProcessor::render(GLfloat time)
 {
     // Set uniforms/options
-    this->PostProcessingShader.use();
-    this->PostProcessingShader.SetFloat("time", time);
-    this->PostProcessingShader.SetInteger("confuse", this->confuse);
-    this->PostProcessingShader.SetInteger("chaos", this->chaos);
-    this->PostProcessingShader.SetInteger("shake", this->Shake);
-    // Render textured quad
-    glActiveTexture(GL_TEXTURE0);
-    this->Texture.Bind();
-    glBindVertexArray(this->VAO);
-    glDrawArrays(GL_TRIANGLES, 0, 6);
-    glBindVertexArray(0);
+//    this->PostProcessingShader.use();
+//    this->PostProcessingShader.SetFloat("time", time);
+//    this->PostProcessingShader.SetInteger("confuse", this->confuse);
+//    this->PostProcessingShader.SetInteger("chaos", this->chaos);
+//    this->PostProcessingShader.SetInteger("shake", this->Shake);
+//    // Render textured quad
+//    glActiveTexture(GL_TEXTURE0);
+//    this->Texture.Bind();
+//    glBindVertexArray(this->VAO);
+//    glDrawArrays(GL_TRIANGLES, 0, 6);
+//    glBindVertexArray(0);
 }
 
 void PostProcessor::initRenderData()

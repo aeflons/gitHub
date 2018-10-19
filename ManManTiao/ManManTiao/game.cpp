@@ -5,14 +5,21 @@
 //  Created [1] yujunzhen on 2018/8/15.
 //  Copyright © 2018年 yujunzhen. All rights reserved.
 //
+#include <stdio.h>
 
 #include "game.h"
 #include "GameObject.h"
 #include <math.h>
+#include <irrKlang.h>
+using namespace irrklang;
 SpriteRender  *Renderer;
 GameObject    *Player;
 BallObject    *Ball;
 PartucleGenerator *partucle;
+ISoundEngine   *engine;
+#pragma comment(lib, "irrklang.lib")
+
+
 // 初始化球的速度
 const vmath::vec2 INITIAL_BALL_VELOCITY(0.05,- 0.1);
 // 球的半径
@@ -28,6 +35,9 @@ typedef std::tuple<GLboolean, Direction, vmath::vec2> Collision;
 Game::Game(GLuint width, GLuint height){
     this->Width = width;
     this->Height = height;
+    
+     engine = createIrrKlangDevice();
+
 }
 Game::~Game(){
     delete Renderer;
@@ -63,6 +73,8 @@ void Game:: Init(){
     vmath::vec2 balllPos = playerPos + vmath::vec2(PLAYER_SIZE[0] / 2 - BALL_RADIUS / 800, -BALL_RADIUS / 800 * 2);
     Ball = new BallObject(balllPos, BALL_RADIUS / 800, INITIAL_BALL_VELOCITY, ResouceManager::GetTexture("face"));
     partucle = new PartucleGenerator(ResouceManager::GetShader("parture"),ResouceManager::GetTexture("particle"),100);
+    ISound* music = engine->play3D("ophelia.wav",
+                                   vec3df(0,0,0), true, false, true);
 }
 void Game::Update(GLfloat dt){
     Ball->move(dt, 1);
@@ -105,7 +117,7 @@ void Game:: Render(){
     this->levels[this->level].Draw(*Renderer);
     Player->draw(*Renderer);
     Ball->draw(*Renderer);
-    partucle->Draw();
+    //partucle->Draw();
 
     Texture2D texture = ResouceManager::GetTexture("background");
     
@@ -158,7 +170,9 @@ Collision CheckCollision(BallObject &one, GameObject &two) // AABB - AABB collis
     // 获得圆心center和最近点closest的矢量并判断是否 length <= radius
     difference = closest - center;
     if (vmath::length(difference) <= one.Radius){
+        engine->play2D("bleep.wav");
         return std::make_tuple(GL_TRUE,VectorDirection(difference),difference);
+        
     }else{
         return std::make_tuple(GL_FALSE,UP,vmath::vec2(0.0f,0.0f));
     }

@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA6A7F87213D0E3900218CCF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A7F86213D0E3900218CCF /* libc++.tbd */; };
 		BA9F4FB2212EC1D60031BB9E /* processing.vert in Resources */ = {isa = PBXBuildFile; fileRef = BA9F4FB1212EC1D60031BB9E /* processing.vert */; };
 		BA9F4FB4212EC1DC0031BB9E /* processing.frag in Resources */ = {isa = PBXBuildFile; fileRef = BA9F4FB3212EC1DC0031BB9E /* processing.frag */; };
 		BA9F4FB7212FA1E50031BB9E /* PostProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA9F4FB5212FA1E50031BB9E /* PostProcessor.cpp */; };
+		BAA5B187213CD98500F1AEB2 /* bleep.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAA5B182213CD98500F1AEB2 /* bleep.wav */; };
+		BAA5B188213CD98500F1AEB2 /* powerup.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAA5B183213CD98500F1AEB2 /* powerup.wav */; };
+		BAA5B189213CD98500F1AEB2 /* solid.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAA5B184213CD98500F1AEB2 /* solid.wav */; };
+		BAA5B18B213CD98500F1AEB2 /* breakout.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAA5B186213CD98500F1AEB2 /* breakout.wav */; };
+		BABE0459213D1C1300AFAED9 /* libirrklang.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BABE0457213D1BDF00AFAED9 /* libirrklang.dylib */; };
+		BABE0465213D235E00AFAED9 /* ophelia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BABE0464213D235E00AFAED9 /* ophelia.mp3 */; };
+		BABE047E213D27EC00AFAED9 /* libikpFLAC.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BABE047C213D27EC00AFAED9 /* libikpFLAC.dylib */; };
+		BABE047F213D27EC00AFAED9 /* libikpMP3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BABE047D213D27EC00AFAED9 /* libikpMP3.dylib */; };
+		BABE049F213D4D5000AFAED9 /* ophelia.wav in Resources */ = {isa = PBXBuildFile; fileRef = BABE049E213D4D5000AFAED9 /* ophelia.wav */; };
 		BAC4D2F7212D122A0089CE56 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAC4D2F6212D122A0089CE56 /* background.jpg */; };
 		BAC4D2F9212D3FE70089CE56 /* paddle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAC4D2F8212D3FE70089CE56 /* paddle.jpg */; };
 		BAC4D2FB212D440B0089CE56 /* BallObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAC4D2FA212D440B0089CE56 /* BallObject.cpp */; };
@@ -45,17 +55,28 @@
 		BAD2CA14212AB43E0089E2CF /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAD2CA0C212AB43E0089E2CF /* Shader.cpp */; };
 		BAD2CA17212AC9910089E2CF /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAD2CA15212AC9910089E2CF /* GameObject.cpp */; };
 		BAD2CA1A212ADBA40089E2CF /* GameLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAD2CA18212ADBA40089E2CF /* GameLevel.cpp */; };
-		BAD2CA1C212ADC7C0089E2CF /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD2CA1B212ADC7C0089E2CF /* libstdc++.tbd */; };
 		BAD2CA1E212BC5890089E2CF /* level1 in Resources */ = {isa = PBXBuildFile; fileRef = BAD2CA1D212BC5890089E2CF /* level1 */; };
 		BAD2CA21212BF2000089E2CF /* block_solid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAD2CA1F212BF1FF0089E2CF /* block_solid.jpg */; };
 		BAD2CA22212BF2000089E2CF /* block.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAD2CA20212BF2000089E2CF /* block.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA6A7F86213D0E3900218CCF /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		BA6A7F88213D0E4600218CCF /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		BA6A7F8B213D102B00218CCF /* libirrklang.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libirrklang.dylib; path = "/Users/yujunzhen/Desktop/Study/GitHub/ManManTiao/ManManTiao/irrKlang-1.5.0/bin/macosx-gcc/libirrklang.dylib"; sourceTree = "<absolute>"; };
 		BA9F4FB1212EC1D60031BB9E /* processing.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = processing.vert; sourceTree = "<group>"; };
 		BA9F4FB3212EC1DC0031BB9E /* processing.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = processing.frag; sourceTree = "<group>"; };
 		BA9F4FB5212FA1E50031BB9E /* PostProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PostProcessor.cpp; sourceTree = "<group>"; };
 		BA9F4FB6212FA1E50031BB9E /* PostProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostProcessor.h; sourceTree = "<group>"; };
+		BAA5B182213CD98500F1AEB2 /* bleep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bleep.wav; sourceTree = "<group>"; };
+		BAA5B183213CD98500F1AEB2 /* powerup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = powerup.wav; sourceTree = "<group>"; };
+		BAA5B184213CD98500F1AEB2 /* solid.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = solid.wav; sourceTree = "<group>"; };
+		BAA5B186213CD98500F1AEB2 /* breakout.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = breakout.wav; sourceTree = "<group>"; };
+		BABE0457213D1BDF00AFAED9 /* libirrklang.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libirrklang.dylib; sourceTree = "<group>"; };
+		BABE0464213D235E00AFAED9 /* ophelia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ophelia.mp3; path = ManManTiao/ophelia.mp3; sourceTree = "<group>"; };
+		BABE047C213D27EC00AFAED9 /* libikpFLAC.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libikpFLAC.dylib; sourceTree = "<group>"; };
+		BABE047D213D27EC00AFAED9 /* libikpMP3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libikpMP3.dylib; sourceTree = "<group>"; };
+		BABE049E213D4D5000AFAED9 /* ophelia.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ophelia.wav; sourceTree = "<group>"; };
 		BAC4D2F6212D122A0089CE56 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		BAC4D2F8212D3FE70089CE56 /* paddle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paddle.jpg; sourceTree = "<group>"; };
 		BAC4D2FA212D440B0089CE56 /* BallObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BallObject.cpp; sourceTree = "<group>"; };
@@ -142,7 +163,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAD2CA1C212ADC7C0089E2CF /* libstdc++.tbd in Frameworks */,
+				BABE047E213D27EC00AFAED9 /* libikpFLAC.dylib in Frameworks */,
+				BABE047F213D27EC00AFAED9 /* libikpMP3.dylib in Frameworks */,
+				BABE0459213D1C1300AFAED9 /* libirrklang.dylib in Frameworks */,
+				BA6A7F87213D0E3900218CCF /* libc++.tbd in Frameworks */,
 				BAD2C9BF212AA77C0089E2CF /* libglfw.3.2.dylib in Frameworks */,
 				BAD2C9BD212AA7600089E2CF /* libGLEW.2.1.0.dylib in Frameworks */,
 				BAD2C9BB212AA73A0089E2CF /* GLUT.framework in Frameworks */,
@@ -153,12 +177,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BABE0456213D12EB00AFAED9 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				BA6A7F8B213D102B00218CCF /* libirrklang.dylib */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		BAD2C99A212AA7170089E2CF = {
 			isa = PBXGroup;
 			children = (
+				BABE0464213D235E00AFAED9 /* ophelia.mp3 */,
 				BAD2C9B7212AA72E0089E2CF /* Frameworks */,
 				BAD2C9A5212AA7170089E2CF /* ManManTiao */,
 				BAD2C9A4212AA7170089E2CF /* Products */,
+				BABE0456213D12EB00AFAED9 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +207,7 @@
 		BAD2C9A5212AA7170089E2CF /* ManManTiao */ = {
 			isa = PBXGroup;
 			children = (
+				BABE049E213D4D5000AFAED9 /* ophelia.wav */,
 				BAD2C9C0212AA7DD0089E2CF /* lib */,
 				BAD2C9A9212AA7180089E2CF /* Assets.xcassets */,
 				BAD2C9AE212AA7180089E2CF /* Info.plist */,
@@ -211,6 +246,10 @@
 				BAC4D2F6212D122A0089CE56 /* background.jpg */,
 				BAC4D2F8212D3FE70089CE56 /* paddle.jpg */,
 				BAC4D306212E64690089CE56 /* particle.jpg */,
+				BAA5B182213CD98500F1AEB2 /* bleep.wav */,
+				BAA5B186213CD98500F1AEB2 /* breakout.wav */,
+				BAA5B183213CD98500F1AEB2 /* powerup.wav */,
+				BAA5B184213CD98500F1AEB2 /* solid.wav */,
 			);
 			path = ManManTiao;
 			sourceTree = "<group>";
@@ -218,6 +257,11 @@
 		BAD2C9B7212AA72E0089E2CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BABE047C213D27EC00AFAED9 /* libikpFLAC.dylib */,
+				BABE047D213D27EC00AFAED9 /* libikpMP3.dylib */,
+				BABE0457213D1BDF00AFAED9 /* libirrklang.dylib */,
+				BA6A7F88213D0E4600218CCF /* libstdc++.6.0.9.tbd */,
+				BA6A7F86213D0E3900218CCF /* libc++.tbd */,
 				BAD2CA1B212ADC7C0089E2CF /* libstdc++.tbd */,
 				BAD2C9BE212AA77C0089E2CF /* libglfw.3.2.dylib */,
 				BAD2C9BC212AA7600089E2CF /* libGLEW.2.1.0.dylib */,
@@ -305,6 +349,11 @@
 				TargetAttributes = {
 					BAD2C9A2212AA7170089E2CF = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -331,18 +380,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BABE0465213D235E00AFAED9 /* ophelia.mp3 in Resources */,
 				BAC4D304212E54340089CE56 /* Partucle.frag in Resources */,
 				BAC4D302212E54290089CE56 /* Partucle.vert in Resources */,
 				BAD2CA1E212BC5890089E2CF /* level1 in Resources */,
 				BAD2CA22212BF2000089E2CF /* block.jpg in Resources */,
 				BAD2C9AA212AA7180089E2CF /* Assets.xcassets in Resources */,
+				BAA5B187213CD98500F1AEB2 /* bleep.wav in Resources */,
 				BA9F4FB2212EC1D60031BB9E /* processing.vert in Resources */,
+				BAA5B18B213CD98500F1AEB2 /* breakout.wav in Resources */,
+				BABE049F213D4D5000AFAED9 /* ophelia.wav in Resources */,
 				BAD2CA13212AB43E0089E2CF /* sprite.jpg in Resources */,
 				BAC4D2F9212D3FE70089CE56 /* paddle.jpg in Resources */,
+				BAA5B188213CD98500F1AEB2 /* powerup.wav in Resources */,
 				BA9F4FB4212EC1DC0031BB9E /* processing.frag in Resources */,
 				BAC4D307212E64690089CE56 /* particle.jpg in Resources */,
 				BAD2C9FC212AAD9F0089E2CF /* sprite.frag in Resources */,
 				BAC4D2F7212D122A0089CE56 /* background.jpg in Resources */,
+				BAA5B189213CD98500F1AEB2 /* solid.wav in Resources */,
 				BAD2C9FA212AAD990089E2CF /* sprite.vert in Resources */,
 				BAD2CA21212BF2000089E2CF /* block_solid.jpg in Resources */,
 			);
@@ -435,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -487,7 +542,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -496,16 +551,20 @@
 		BAD2C9B5212AA7180089E2CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ManManTiao/ManManTiao.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NLRV94SV3R;
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/ManManTiao/lib/**",
+					"$(SRCROOT)/ManManTiao/lib",
 					"$(glew_header)",
 					"$(glfw_header)",
 					"$(SRCROOT)",
+					"/Users/yujunzhen/Desktop/irrKlang-64bit-1.6.0/plugins/**",
+					"/Users/yujunzhen/Desktop/irrKlang-64bit-1.6.0/include",
 				);
 				INFOPLIST_FILE = ManManTiao/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -516,25 +575,34 @@
 					"$(inherited)",
 					/usr/local/Cellar/glew/2.1.0/lib,
 					/usr/local/Cellar/glfw/3.2.1/lib,
+					"/Users/yujunzhen/Desktop/irrKlang-64bit-1.6.0/bin/macosx-gcc",
+					"$(PROJECT_DIR)",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = alfons.ManManTiao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
 		BAD2C9B6212AA7180089E2CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ManManTiao/ManManTiao.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NLRV94SV3R;
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/ManManTiao/lib/**",
+					"$(SRCROOT)/ManManTiao/lib",
 					"$(glew_header)",
 					"$(glfw_header)",
 					"$(SRCROOT)",
+					"/Users/yujunzhen/Desktop/irrKlang-64bit-1.6.0/plugins/**",
+					"/Users/yujunzhen/Desktop/irrKlang-64bit-1.6.0/include",
 				);
 				INFOPLIST_FILE = ManManTiao/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -545,9 +613,14 @@
 					"$(inherited)",
 					/usr/local/Cellar/glew/2.1.0/lib,
 					/usr/local/Cellar/glfw/3.2.1/lib,
+					"/Users/yujunzhen/Desktop/irrKlang-64bit-1.6.0/bin/macosx-gcc",
+					"$(PROJECT_DIR)",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = alfons.ManManTiao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
